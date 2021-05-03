@@ -1,0 +1,168 @@
+\hypertarget{class_ltc2754___s_p_i}{}\doxysection{Ltc2754\+\_\+\+S\+PI Class Reference}
+\label{class_ltc2754___s_p_i}\index{Ltc2754\_SPI@{Ltc2754\_SPI}}
+
+
+{\ttfamily \#include $<$Ltc2754\+\_\+\+S\+P\+I.\+h$>$}
+
+Inheritance diagram for Ltc2754\+\_\+\+S\+PI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ltc2754___s_p_i}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdc}{Channel\+Nbr}} \+: uint8\+\_\+t \{ \newline
+\mbox{\hyperlink{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdca50d5730f865be3a03cce1876cd530928}{C\+H\+A\+N\+N\+E\+L\+\_\+0}} = 0, 
+\mbox{\hyperlink{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdcad5f149dd474067d1253057ff7ef8e25b}{C\+H\+A\+N\+N\+E\+L\+\_\+1}} = 1, 
+\mbox{\hyperlink{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdca5f60f2ee944f604f57f232fd79a03342}{C\+H\+A\+N\+N\+E\+L\+\_\+2}} = 2, 
+\mbox{\hyperlink{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdca95b74e7006128210ce0e59f5d615e870}{C\+H\+A\+N\+N\+E\+L\+\_\+3}} = 3, 
+\newline
+\mbox{\hyperlink{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdca589a1dbac55d1a60a8ea941a0e535b60}{C\+H\+A\+N\+N\+E\+L\+\_\+\+A\+LL}} = 15, 
+\mbox{\hyperlink{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdca428edb8919c8c9f53f5461cae88a8ea9}{C\+H\+A\+N\+N\+E\+L\+\_\+\+N\+O\+NE}} = 14
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_ltc2754___s_p_i_a6bf5cfce578f47b3eccf54eab1cddeba}{is\+Channel\+Valid}} (\mbox{\hyperlink{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdc}{Channel\+Nbr}} c)
+\item 
+\mbox{\hyperlink{class_ltc2754___s_p_i_aa377c9de6c773fa6192673893c63708a}{Ltc2754\+\_\+\+S\+PI}} (volatile void $\ast$addr, \mbox{\hyperlink{class_altera_pio}{Altera\+Pio}} $\ast$control)
+\item 
+void \mbox{\hyperlink{class_ltc2754___s_p_i_a02a6c0e7e4a4db9169fdf95d76fcd639}{reset}} ()
+\item 
+\mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} \mbox{\hyperlink{class_ltc2754___s_p_i_a2069190674d10146d7929218f3ecd403}{set\+Code}} (uint16\+\_\+t code, \mbox{\hyperlink{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdc}{Channel\+Nbr}} channel, \mbox{\hyperlink{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdc}{Channel\+Nbr}} update=\mbox{\hyperlink{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdca428edb8919c8c9f53f5461cae88a8ea9}{C\+H\+A\+N\+N\+E\+L\+\_\+\+N\+O\+NE}}, bool echo=false)
+\begin{DoxyCompactList}\small\item\em Set an output value to one or several D/A channels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_ltc2754___s_p_i_a4f97fdf3e1f6fe71742b249eb6a1a3cf}{buff\+\_\+out}} \mbox{[}4\mbox{]}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_ltc2754___s_p_i_ae1c1476334933b916cc54c34820f7ce6}{buff\+\_\+in}} \mbox{[}4\mbox{]}
+\item 
+\mbox{\hyperlink{class_altera_pio}{Altera\+Pio}} $\ast$ \mbox{\hyperlink{class_ltc2754___s_p_i_a0a9c8af9c8424178c6ecb07cb50f201c}{control\+Reg}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const uint32\+\_\+t \mbox{\hyperlink{class_ltc2754___s_p_i_a969deb83775b262ff8831f5f502e847d}{C\+T\+R\+L\+\_\+\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+mask}} = 0x040
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdc}\label{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdc}} 
+\index{Ltc2754\_SPI@{Ltc2754\_SPI}!ChannelNbr@{ChannelNbr}}
+\index{ChannelNbr@{ChannelNbr}!Ltc2754\_SPI@{Ltc2754\_SPI}}
+\doxysubsubsection{\texorpdfstring{ChannelNbr}{ChannelNbr}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdc}{Ltc2754\+\_\+\+S\+P\+I\+::\+Channel\+Nbr}} \+: uint8\+\_\+t}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHANNEL\_0@{CHANNEL\_0}!Ltc2754\_SPI@{Ltc2754\_SPI}}\index{Ltc2754\_SPI@{Ltc2754\_SPI}!CHANNEL\_0@{CHANNEL\_0}}}\mbox{\Hypertarget{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdca50d5730f865be3a03cce1876cd530928}\label{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdca50d5730f865be3a03cce1876cd530928}} 
+C\+H\+A\+N\+N\+E\+L\+\_\+0&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHANNEL\_1@{CHANNEL\_1}!Ltc2754\_SPI@{Ltc2754\_SPI}}\index{Ltc2754\_SPI@{Ltc2754\_SPI}!CHANNEL\_1@{CHANNEL\_1}}}\mbox{\Hypertarget{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdcad5f149dd474067d1253057ff7ef8e25b}\label{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdcad5f149dd474067d1253057ff7ef8e25b}} 
+C\+H\+A\+N\+N\+E\+L\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHANNEL\_2@{CHANNEL\_2}!Ltc2754\_SPI@{Ltc2754\_SPI}}\index{Ltc2754\_SPI@{Ltc2754\_SPI}!CHANNEL\_2@{CHANNEL\_2}}}\mbox{\Hypertarget{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdca5f60f2ee944f604f57f232fd79a03342}\label{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdca5f60f2ee944f604f57f232fd79a03342}} 
+C\+H\+A\+N\+N\+E\+L\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHANNEL\_3@{CHANNEL\_3}!Ltc2754\_SPI@{Ltc2754\_SPI}}\index{Ltc2754\_SPI@{Ltc2754\_SPI}!CHANNEL\_3@{CHANNEL\_3}}}\mbox{\Hypertarget{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdca95b74e7006128210ce0e59f5d615e870}\label{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdca95b74e7006128210ce0e59f5d615e870}} 
+C\+H\+A\+N\+N\+E\+L\+\_\+3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHANNEL\_ALL@{CHANNEL\_ALL}!Ltc2754\_SPI@{Ltc2754\_SPI}}\index{Ltc2754\_SPI@{Ltc2754\_SPI}!CHANNEL\_ALL@{CHANNEL\_ALL}}}\mbox{\Hypertarget{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdca589a1dbac55d1a60a8ea941a0e535b60}\label{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdca589a1dbac55d1a60a8ea941a0e535b60}} 
+C\+H\+A\+N\+N\+E\+L\+\_\+\+A\+LL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHANNEL\_NONE@{CHANNEL\_NONE}!Ltc2754\_SPI@{Ltc2754\_SPI}}\index{Ltc2754\_SPI@{Ltc2754\_SPI}!CHANNEL\_NONE@{CHANNEL\_NONE}}}\mbox{\Hypertarget{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdca428edb8919c8c9f53f5461cae88a8ea9}\label{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdca428edb8919c8c9f53f5461cae88a8ea9}} 
+C\+H\+A\+N\+N\+E\+L\+\_\+\+N\+O\+NE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ltc2754___s_p_i_aa377c9de6c773fa6192673893c63708a}\label{class_ltc2754___s_p_i_aa377c9de6c773fa6192673893c63708a}} 
+\index{Ltc2754\_SPI@{Ltc2754\_SPI}!Ltc2754\_SPI@{Ltc2754\_SPI}}
+\index{Ltc2754\_SPI@{Ltc2754\_SPI}!Ltc2754\_SPI@{Ltc2754\_SPI}}
+\doxysubsubsection{\texorpdfstring{Ltc2754\_SPI()}{Ltc2754\_SPI()}}
+{\footnotesize\ttfamily Ltc2754\+\_\+\+S\+P\+I\+::\+Ltc2754\+\_\+\+S\+PI (\begin{DoxyParamCaption}\item[{volatile void $\ast$}]{addr,  }\item[{\mbox{\hyperlink{class_altera_pio}{Altera\+Pio}} $\ast$}]{control }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ltc2754___s_p_i_a6bf5cfce578f47b3eccf54eab1cddeba}\label{class_ltc2754___s_p_i_a6bf5cfce578f47b3eccf54eab1cddeba}} 
+\index{Ltc2754\_SPI@{Ltc2754\_SPI}!isChannelValid@{isChannelValid}}
+\index{isChannelValid@{isChannelValid}!Ltc2754\_SPI@{Ltc2754\_SPI}}
+\doxysubsubsection{\texorpdfstring{isChannelValid()}{isChannelValid()}}
+{\footnotesize\ttfamily bool Ltc2754\+\_\+\+S\+P\+I\+::is\+Channel\+Valid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdc}{Channel\+Nbr}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_ltc2754___s_p_i_a02a6c0e7e4a4db9169fdf95d76fcd639}\label{class_ltc2754___s_p_i_a02a6c0e7e4a4db9169fdf95d76fcd639}} 
+\index{Ltc2754\_SPI@{Ltc2754\_SPI}!reset@{reset}}
+\index{reset@{reset}!Ltc2754\_SPI@{Ltc2754\_SPI}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Ltc2754\+\_\+\+S\+P\+I\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_ltc2754___s_p_i_a2069190674d10146d7929218f3ecd403}\label{class_ltc2754___s_p_i_a2069190674d10146d7929218f3ecd403}} 
+\index{Ltc2754\_SPI@{Ltc2754\_SPI}!setCode@{setCode}}
+\index{setCode@{setCode}!Ltc2754\_SPI@{Ltc2754\_SPI}}
+\doxysubsubsection{\texorpdfstring{setCode()}{setCode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} Ltc2754\+\_\+\+S\+P\+I\+::set\+Code (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{code,  }\item[{\mbox{\hyperlink{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdc}{Channel\+Nbr}}}]{channel,  }\item[{\mbox{\hyperlink{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdc}{Channel\+Nbr}}}]{update = {\ttfamily \mbox{\hyperlink{class_ltc2754___s_p_i_a2101f0c4b61868744852c03985eeccdca428edb8919c8c9f53f5461cae88a8ea9}{C\+H\+A\+N\+N\+E\+L\+\_\+\+N\+O\+NE}}},  }\item[{bool}]{echo = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Set an output value to one or several D/A channels. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & Value to convert to analog out. \\
+\hline
+{\em channel} & Channel number or all the channels. \\
+\hline
+{\em update} & Which output to update after updating the value. Default is C\+H\+A\+N\+N\+E\+L\+\_\+\+N\+O\+NE. \\
+\hline
+{\em echo} & Determine if we are sending a 32-\/bit command (echo is true) so that we can get an echo. Default is false, a 24-\/bit command, and no echo. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em E\+R\+R\+C\+O\+D\+E\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR} & if successful, E\+R\+R\+C\+O\+D\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+V\+A\+L\+UE if the parameters are incompatible. \\
+\hline
+\end{DoxyRetVals}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ltc2754___s_p_i_ae1c1476334933b916cc54c34820f7ce6}\label{class_ltc2754___s_p_i_ae1c1476334933b916cc54c34820f7ce6}} 
+\index{Ltc2754\_SPI@{Ltc2754\_SPI}!buff\_in@{buff\_in}}
+\index{buff\_in@{buff\_in}!Ltc2754\_SPI@{Ltc2754\_SPI}}
+\doxysubsubsection{\texorpdfstring{buff\_in}{buff\_in}}
+{\footnotesize\ttfamily uint8\+\_\+t Ltc2754\+\_\+\+S\+P\+I\+::buff\+\_\+in\mbox{[}4\mbox{]}}
+
+\mbox{\Hypertarget{class_ltc2754___s_p_i_a4f97fdf3e1f6fe71742b249eb6a1a3cf}\label{class_ltc2754___s_p_i_a4f97fdf3e1f6fe71742b249eb6a1a3cf}} 
+\index{Ltc2754\_SPI@{Ltc2754\_SPI}!buff\_out@{buff\_out}}
+\index{buff\_out@{buff\_out}!Ltc2754\_SPI@{Ltc2754\_SPI}}
+\doxysubsubsection{\texorpdfstring{buff\_out}{buff\_out}}
+{\footnotesize\ttfamily uint8\+\_\+t Ltc2754\+\_\+\+S\+P\+I\+::buff\+\_\+out\mbox{[}4\mbox{]}}
+
+\mbox{\Hypertarget{class_ltc2754___s_p_i_a0a9c8af9c8424178c6ecb07cb50f201c}\label{class_ltc2754___s_p_i_a0a9c8af9c8424178c6ecb07cb50f201c}} 
+\index{Ltc2754\_SPI@{Ltc2754\_SPI}!controlReg@{controlReg}}
+\index{controlReg@{controlReg}!Ltc2754\_SPI@{Ltc2754\_SPI}}
+\doxysubsubsection{\texorpdfstring{controlReg}{controlReg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_altera_pio}{Altera\+Pio}}$\ast$ Ltc2754\+\_\+\+S\+P\+I\+::control\+Reg}
+
+\mbox{\Hypertarget{class_ltc2754___s_p_i_a969deb83775b262ff8831f5f502e847d}\label{class_ltc2754___s_p_i_a969deb83775b262ff8831f5f502e847d}} 
+\index{Ltc2754\_SPI@{Ltc2754\_SPI}!CTRL\_DA\_CLEAR\_mask@{CTRL\_DA\_CLEAR\_mask}}
+\index{CTRL\_DA\_CLEAR\_mask@{CTRL\_DA\_CLEAR\_mask}!Ltc2754\_SPI@{Ltc2754\_SPI}}
+\doxysubsubsection{\texorpdfstring{CTRL\_DA\_CLEAR\_mask}{CTRL\_DA\_CLEAR\_mask}}
+{\footnotesize\ttfamily const uint32\+\_\+t Ltc2754\+\_\+\+S\+P\+I\+::\+C\+T\+R\+L\+\_\+\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+mask = 0x040\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Alphi/\+P\+C\+Ie\+Mini\+Software/include/\mbox{\hyperlink{_ltc2754___s_p_i_8h}{Ltc2754\+\_\+\+S\+P\+I.\+h}}\item 
+\mbox{\hyperlink{_ltc2754___s_p_i_8cpp}{Ltc2754\+\_\+\+S\+P\+I.\+cpp}}\end{DoxyCompactItemize}

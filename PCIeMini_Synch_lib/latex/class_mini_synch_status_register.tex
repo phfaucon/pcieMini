@@ -1,0 +1,97 @@
+\hypertarget{class_mini_synch_status_register}{}\doxysection{Mini\+Synch\+Status\+Register Class Reference}
+\label{class_mini_synch_status_register}\index{MiniSynchStatusRegister@{MiniSynchStatusRegister}}
+
+
+Status register class for the P\+C\+Ie\+Mini board.  
+
+
+
+
+{\ttfamily \#include $<$Mini\+Synch\+Status\+Register.\+h$>$}
+
+Inheritance diagram for Mini\+Synch\+Status\+Register\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mini_synch_status_register}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mini_synch_status_register_aed183778d3e1210e257593cef2c32891}{Mini\+Synch\+Status\+Register}} (volatile void $\ast$addr)
+\item 
+bool \mbox{\hyperlink{class_mini_synch_status_register_af172b0ca2b52bbccf38075344b5857d7}{is\+Bit\+Valid}} ()
+\begin{DoxyCompactList}\small\item\em Check the synchro error flag (B\+IT) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mini_synch_status_register_a82904868a937688b0c2780268b78ca62}{enable\+Bit\+Valid\+Irq}} ()
+\begin{DoxyCompactList}\small\item\em Enable the synchro error interrupt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mini_synch_status_register_a14555a1b616d6f3c7e15cee3a1a4bb2c}{disable\+Bit\+Valid\+Irq}} ()
+\begin{DoxyCompactList}\small\item\em Disable the synchro error interrupt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const uint32\+\_\+t \mbox{\hyperlink{class_mini_synch_status_register_a7131a82c27975ec4a3040d011987e8fd}{S\+T\+A\+T\+U\+S\+\_\+\+B\+I\+T\+\_\+\+V\+A\+L\+I\+D\+\_\+\+M\+A\+SK}} = 0x01
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Status register class for the P\+C\+Ie\+Mini board. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_mini_synch_status_register_aed183778d3e1210e257593cef2c32891}\label{class_mini_synch_status_register_aed183778d3e1210e257593cef2c32891}} 
+\index{MiniSynchStatusRegister@{MiniSynchStatusRegister}!MiniSynchStatusRegister@{MiniSynchStatusRegister}}
+\index{MiniSynchStatusRegister@{MiniSynchStatusRegister}!MiniSynchStatusRegister@{MiniSynchStatusRegister}}
+\doxysubsubsection{\texorpdfstring{MiniSynchStatusRegister()}{MiniSynchStatusRegister()}}
+{\footnotesize\ttfamily Mini\+Synch\+Status\+Register\+::\+Mini\+Synch\+Status\+Register (\begin{DoxyParamCaption}\item[{volatile void $\ast$}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mini_synch_status_register_a14555a1b616d6f3c7e15cee3a1a4bb2c}\label{class_mini_synch_status_register_a14555a1b616d6f3c7e15cee3a1a4bb2c}} 
+\index{MiniSynchStatusRegister@{MiniSynchStatusRegister}!disableBitValidIrq@{disableBitValidIrq}}
+\index{disableBitValidIrq@{disableBitValidIrq}!MiniSynchStatusRegister@{MiniSynchStatusRegister}}
+\doxysubsubsection{\texorpdfstring{disableBitValidIrq()}{disableBitValidIrq()}}
+{\footnotesize\ttfamily void Mini\+Synch\+Status\+Register\+::disable\+Bit\+Valid\+Irq (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Disable the synchro error interrupt. 
+
+\mbox{\Hypertarget{class_mini_synch_status_register_a82904868a937688b0c2780268b78ca62}\label{class_mini_synch_status_register_a82904868a937688b0c2780268b78ca62}} 
+\index{MiniSynchStatusRegister@{MiniSynchStatusRegister}!enableBitValidIrq@{enableBitValidIrq}}
+\index{enableBitValidIrq@{enableBitValidIrq}!MiniSynchStatusRegister@{MiniSynchStatusRegister}}
+\doxysubsubsection{\texorpdfstring{enableBitValidIrq()}{enableBitValidIrq()}}
+{\footnotesize\ttfamily void Mini\+Synch\+Status\+Register\+::enable\+Bit\+Valid\+Irq (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enable the synchro error interrupt. 
+
+The interrupt is generated on the error signal becoming active (B\+I\+Tn going low) \mbox{\Hypertarget{class_mini_synch_status_register_af172b0ca2b52bbccf38075344b5857d7}\label{class_mini_synch_status_register_af172b0ca2b52bbccf38075344b5857d7}} 
+\index{MiniSynchStatusRegister@{MiniSynchStatusRegister}!isBitValid@{isBitValid}}
+\index{isBitValid@{isBitValid}!MiniSynchStatusRegister@{MiniSynchStatusRegister}}
+\doxysubsubsection{\texorpdfstring{isBitValid()}{isBitValid()}}
+{\footnotesize\ttfamily bool Mini\+Synch\+Status\+Register\+::is\+Bit\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check the synchro error flag (B\+IT) 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if the sysnchro output is not in error \\
+\hline
+\end{DoxyRetVals}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_mini_synch_status_register_a7131a82c27975ec4a3040d011987e8fd}\label{class_mini_synch_status_register_a7131a82c27975ec4a3040d011987e8fd}} 
+\index{MiniSynchStatusRegister@{MiniSynchStatusRegister}!STATUS\_BIT\_VALID\_MASK@{STATUS\_BIT\_VALID\_MASK}}
+\index{STATUS\_BIT\_VALID\_MASK@{STATUS\_BIT\_VALID\_MASK}!MiniSynchStatusRegister@{MiniSynchStatusRegister}}
+\doxysubsubsection{\texorpdfstring{STATUS\_BIT\_VALID\_MASK}{STATUS\_BIT\_VALID\_MASK}}
+{\footnotesize\ttfamily const uint32\+\_\+t Mini\+Synch\+Status\+Register\+::\+S\+T\+A\+T\+U\+S\+\_\+\+B\+I\+T\+\_\+\+V\+A\+L\+I\+D\+\_\+\+M\+A\+SK = 0x01\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Alphi/\+P\+C\+Ie\+Mini\+Software/include/\mbox{\hyperlink{_mini_synch_status_register_8h}{Mini\+Synch\+Status\+Register.\+h}}\end{DoxyCompactItemize}

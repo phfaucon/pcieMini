@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCIe-Mini-Arinc429_test", "arinc429test.vcxproj", "{8F383C71-FD4E-42F9-90FB-04AAF8436671}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A95868E3-2942-4382-932E-70D94DF9F215} = {A95868E3-2942-4382-932E-70D94DF9F215}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCIe-Mini-Arinc429_lib", "arinc429lib.vcxproj", "{A95868E3-2942-4382-932E-70D94DF9F215}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arinc429NIOS", "..\Arinc429NIOS\Arinc429NIOS.vcxproj", "{75855B8E-69CD-4170-B445-42DECD540405}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "socketCanDriver", "..\socketCanDriver\socketCanDriver.vcxproj", "{194641BB-2863-4FCF-AE51-A4316A65AEFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F383C71-FD4E-42F9-90FB-04AAF8436671}.Debug|x64.ActiveCfg = Debug|x64
+		{8F383C71-FD4E-42F9-90FB-04AAF8436671}.Debug|x64.Build.0 = Debug|x64
+		{8F383C71-FD4E-42F9-90FB-04AAF8436671}.Debug|x86.ActiveCfg = Debug|Win32
+		{8F383C71-FD4E-42F9-90FB-04AAF8436671}.Debug|x86.Build.0 = Debug|Win32
+		{8F383C71-FD4E-42F9-90FB-04AAF8436671}.Release|x64.ActiveCfg = Release|x64
+		{8F383C71-FD4E-42F9-90FB-04AAF8436671}.Release|x64.Build.0 = Release|x64
+		{8F383C71-FD4E-42F9-90FB-04AAF8436671}.Release|x86.ActiveCfg = Release|Win32
+		{8F383C71-FD4E-42F9-90FB-04AAF8436671}.Release|x86.Build.0 = Release|Win32
+		{A95868E3-2942-4382-932E-70D94DF9F215}.Debug|x64.ActiveCfg = Debug|x64
+		{A95868E3-2942-4382-932E-70D94DF9F215}.Debug|x64.Build.0 = Debug|x64
+		{A95868E3-2942-4382-932E-70D94DF9F215}.Debug|x86.ActiveCfg = Debug|Win32
+		{A95868E3-2942-4382-932E-70D94DF9F215}.Debug|x86.Build.0 = Debug|Win32
+		{A95868E3-2942-4382-932E-70D94DF9F215}.Release|x64.ActiveCfg = Release|x64
+		{A95868E3-2942-4382-932E-70D94DF9F215}.Release|x64.Build.0 = Release|x64
+		{A95868E3-2942-4382-932E-70D94DF9F215}.Release|x86.ActiveCfg = Release|Win32
+		{A95868E3-2942-4382-932E-70D94DF9F215}.Release|x86.Build.0 = Release|Win32
+		{75855B8E-69CD-4170-B445-42DECD540405}.Debug|x64.ActiveCfg = Debug|x64
+		{75855B8E-69CD-4170-B445-42DECD540405}.Debug|x64.Build.0 = Debug|x64
+		{75855B8E-69CD-4170-B445-42DECD540405}.Debug|x86.ActiveCfg = Debug|Win32
+		{75855B8E-69CD-4170-B445-42DECD540405}.Debug|x86.Build.0 = Debug|Win32
+		{75855B8E-69CD-4170-B445-42DECD540405}.Release|x64.ActiveCfg = Release|x64
+		{75855B8E-69CD-4170-B445-42DECD540405}.Release|x64.Build.0 = Release|x64
+		{75855B8E-69CD-4170-B445-42DECD540405}.Release|x86.ActiveCfg = Release|Win32
+		{75855B8E-69CD-4170-B445-42DECD540405}.Release|x86.Build.0 = Release|Win32
+		{194641BB-2863-4FCF-AE51-A4316A65AEFF}.Debug|x64.ActiveCfg = Debug|x64
+		{194641BB-2863-4FCF-AE51-A4316A65AEFF}.Debug|x64.Build.0 = Debug|x64
+		{194641BB-2863-4FCF-AE51-A4316A65AEFF}.Debug|x86.ActiveCfg = Debug|Win32
+		{194641BB-2863-4FCF-AE51-A4316A65AEFF}.Debug|x86.Build.0 = Debug|Win32
+		{194641BB-2863-4FCF-AE51-A4316A65AEFF}.Release|x64.ActiveCfg = Release|x64
+		{194641BB-2863-4FCF-AE51-A4316A65AEFF}.Release|x64.Build.0 = Release|x64
+		{194641BB-2863-4FCF-AE51-A4316A65AEFF}.Release|x86.ActiveCfg = Release|Win32
+		{194641BB-2863-4FCF-AE51-A4316A65AEFF}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {730BAEDB-E814-4B8D-B4DE-0CD41D524331}
+	EndGlobalSection
+EndGlobal

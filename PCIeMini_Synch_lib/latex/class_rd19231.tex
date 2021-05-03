@@ -1,0 +1,118 @@
+\hypertarget{class_rd19231}{}\doxysection{Rd19231 Class Reference}
+\label{class_rd19231}\index{Rd19231@{Rd19231}}
+
+
+D\+DC R\+D19231 controller class.  
+
+
+
+
+{\ttfamily \#include $<$Rd19231.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rd19231_a28cdcc5c4aac01d6bfd8545c51336dee}{Rd19231}} (volatile void $\ast$rd\+\_\+addr, \mbox{\hyperlink{class_status_register}{Status\+Register}} $\ast$status, \mbox{\hyperlink{class_altera_pio}{Altera\+Pio}} $\ast$control)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_rd19231_a2b1dd7adabec439e1d425db08a7fe7da}{get\+Raw\+Pos}} ()
+\item 
+double \mbox{\hyperlink{class_rd19231_ac689e3a0ae02f4cb8ed2fa540ed61b56}{get\+Pos}} ()
+\begin{DoxyCompactList}\small\item\em Get angular position. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_rd19231_a0611b6f19200004c0f213b14b04aa8d6}{get\+Cycle\+Time}} ()
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_rd19231_a788bdefe1135e2e9f311c76ff524436e}{get\+Busy\+Time}} ()
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_rd19231_a3c18725326f3c7376eaaf79a3dd638e9}{get\+Periph\+Tag}} ()
+\item 
+bool \mbox{\hyperlink{class_rd19231_ac95d6609b81f8a9f074300c792db15ca}{is\+Bit\+Valid}} ()
+\begin{DoxyCompactList}\small\item\em Check if output is valid or if B\+IT error. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_rd19231_a8466dcf82e86f0fa4ab8aa89e745918e}{get\+Encoder\+Counter}} ()
+\item 
+void \mbox{\hyperlink{class_rd19231_ab97f25ea74b08673ae523644abc3db1a}{reset}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+D\+DC R\+D19231 controller class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rd19231_a28cdcc5c4aac01d6bfd8545c51336dee}\label{class_rd19231_a28cdcc5c4aac01d6bfd8545c51336dee}} 
+\index{Rd19231@{Rd19231}!Rd19231@{Rd19231}}
+\index{Rd19231@{Rd19231}!Rd19231@{Rd19231}}
+\doxysubsubsection{\texorpdfstring{Rd19231()}{Rd19231()}}
+{\footnotesize\ttfamily Rd19231\+::\+Rd19231 (\begin{DoxyParamCaption}\item[{volatile void $\ast$}]{rd\+\_\+addr,  }\item[{\mbox{\hyperlink{class_status_register}{Status\+Register}} $\ast$}]{status,  }\item[{\mbox{\hyperlink{class_altera_pio}{Altera\+Pio}} $\ast$}]{control }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rd19231_a788bdefe1135e2e9f311c76ff524436e}\label{class_rd19231_a788bdefe1135e2e9f311c76ff524436e}} 
+\index{Rd19231@{Rd19231}!getBusyTime@{getBusyTime}}
+\index{getBusyTime@{getBusyTime}!Rd19231@{Rd19231}}
+\doxysubsubsection{\texorpdfstring{getBusyTime()}{getBusyTime()}}
+{\footnotesize\ttfamily uint32\+\_\+t Rd19231\+::get\+Busy\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rd19231_a0611b6f19200004c0f213b14b04aa8d6}\label{class_rd19231_a0611b6f19200004c0f213b14b04aa8d6}} 
+\index{Rd19231@{Rd19231}!getCycleTime@{getCycleTime}}
+\index{getCycleTime@{getCycleTime}!Rd19231@{Rd19231}}
+\doxysubsubsection{\texorpdfstring{getCycleTime()}{getCycleTime()}}
+{\footnotesize\ttfamily uint32\+\_\+t Rd19231\+::get\+Cycle\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rd19231_a8466dcf82e86f0fa4ab8aa89e745918e}\label{class_rd19231_a8466dcf82e86f0fa4ab8aa89e745918e}} 
+\index{Rd19231@{Rd19231}!getEncoderCounter@{getEncoderCounter}}
+\index{getEncoderCounter@{getEncoderCounter}!Rd19231@{Rd19231}}
+\doxysubsubsection{\texorpdfstring{getEncoderCounter()}{getEncoderCounter()}}
+{\footnotesize\ttfamily uint32\+\_\+t Rd19231\+::get\+Encoder\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rd19231_a3c18725326f3c7376eaaf79a3dd638e9}\label{class_rd19231_a3c18725326f3c7376eaaf79a3dd638e9}} 
+\index{Rd19231@{Rd19231}!getPeriphTag@{getPeriphTag}}
+\index{getPeriphTag@{getPeriphTag}!Rd19231@{Rd19231}}
+\doxysubsubsection{\texorpdfstring{getPeriphTag()}{getPeriphTag()}}
+{\footnotesize\ttfamily uint32\+\_\+t Rd19231\+::get\+Periph\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rd19231_ac689e3a0ae02f4cb8ed2fa540ed61b56}\label{class_rd19231_ac689e3a0ae02f4cb8ed2fa540ed61b56}} 
+\index{Rd19231@{Rd19231}!getPos@{getPos}}
+\index{getPos@{getPos}!Rd19231@{Rd19231}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily double Rd19231\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get angular position. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Position} & in degree, from 0 to 360 degrees \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_rd19231_a2b1dd7adabec439e1d425db08a7fe7da}\label{class_rd19231_a2b1dd7adabec439e1d425db08a7fe7da}} 
+\index{Rd19231@{Rd19231}!getRawPos@{getRawPos}}
+\index{getRawPos@{getRawPos}!Rd19231@{Rd19231}}
+\doxysubsubsection{\texorpdfstring{getRawPos()}{getRawPos()}}
+{\footnotesize\ttfamily uint32\+\_\+t Rd19231\+::get\+Raw\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_rd19231_ac95d6609b81f8a9f074300c792db15ca}\label{class_rd19231_ac95d6609b81f8a9f074300c792db15ca}} 
+\index{Rd19231@{Rd19231}!isBitValid@{isBitValid}}
+\index{isBitValid@{isBitValid}!Rd19231@{Rd19231}}
+\doxysubsubsection{\texorpdfstring{isBitValid()}{isBitValid()}}
+{\footnotesize\ttfamily bool Rd19231\+::is\+Bit\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if output is valid or if B\+IT error. 
+
+The B\+IT error is triggered if any of the following conditions exist \+: $\sim$180 L\+S\+Bs of positive error, $\sim$180 L\+S\+Bs of negative error, Loss of Signal(\+L\+O\+S), or Loss of Reference(\+L\+O\+R) is less than 500 m\+Vp, or a false null occurs when the phase detect circuitry causes a B\+IT and corrects the error.\+Logic 0 for fault condition. 
+\begin{DoxyRetVals}{Return values}
+{\em True} & if valid read, False if there is a B\+IT error \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_rd19231_ab97f25ea74b08673ae523644abc3db1a}\label{class_rd19231_ab97f25ea74b08673ae523644abc3db1a}} 
+\index{Rd19231@{Rd19231}!reset@{reset}}
+\index{reset@{reset}!Rd19231@{Rd19231}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Rd19231\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Alphi/\+P\+C\+Ie\+Mini\+Software/include/\mbox{\hyperlink{_rd19231_8h}{Rd19231.\+h}}\end{DoxyCompactItemize}

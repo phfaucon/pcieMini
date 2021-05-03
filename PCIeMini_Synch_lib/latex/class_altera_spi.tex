@@ -1,0 +1,135 @@
+\hypertarget{class_altera_spi}{}\doxysection{Altera\+Spi Class Reference}
+\label{class_altera_spi}\index{AlteraSpi@{AlteraSpi}}
+
+
+Low level S\+PI interface to the S\+PI hardware.  
+
+
+
+
+{\ttfamily \#include $<$Altera\+Spi.\+h$>$}
+
+Inheritance diagram for Altera\+Spi\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_altera_spi}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_altera_spi_a2556b5a7aaa708d90980992dc629d8bd}{Altera\+Spi}} (volatile void $\ast$addr)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_altera_spi_a1d6da8f8a46a6a72e2c2b9bd4d64625b}{send\+Spi\+Command}} (uint32\+\_\+t slave, uint32\+\_\+t write\+\_\+length, const uint8\+\_\+t $\ast$write\+\_\+data, uint32\+\_\+t read\+\_\+length, uint8\+\_\+t $\ast$read\+\_\+data, uint32\+\_\+t flags)
+\begin{DoxyCompactList}\small\item\em Send an S\+PI command. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_altera_spi_ad475d0080ff34497ee23f93ff2c7aff0}{get\+Rx\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Get the content of the receive data register. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_altera_spi_a795896c6caa10eb02738cc77753ae1ee}{get\+Status}} ()
+\item 
+void \mbox{\hyperlink{class_altera_spi_a8ed70b36c10b352c031575557503bb14}{set\+Tx\+Data}} (uint32\+\_\+t data)
+\item 
+void \mbox{\hyperlink{class_altera_spi_ac38fdac11b408b3045567709b7a7cb7f}{set\+Control}} (uint32\+\_\+t data)
+\item 
+void \mbox{\hyperlink{class_altera_spi_ad85a1a7e29eaf5ea851f1dd2335db61d}{select\+Slave}} (uint32\+\_\+t data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Low level S\+PI interface to the S\+PI hardware. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_altera_spi_a2556b5a7aaa708d90980992dc629d8bd}\label{class_altera_spi_a2556b5a7aaa708d90980992dc629d8bd}} 
+\index{AlteraSpi@{AlteraSpi}!AlteraSpi@{AlteraSpi}}
+\index{AlteraSpi@{AlteraSpi}!AlteraSpi@{AlteraSpi}}
+\doxysubsubsection{\texorpdfstring{AlteraSpi()}{AlteraSpi()}}
+{\footnotesize\ttfamily Altera\+Spi\+::\+Altera\+Spi (\begin{DoxyParamCaption}\item[{volatile void $\ast$}]{addr }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Called only when the board is opened. 
+\begin{DoxyParams}{Parameters}
+{\em addr} & Pointer to the device in user space. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_altera_spi_ad475d0080ff34497ee23f93ff2c7aff0}\label{class_altera_spi_ad475d0080ff34497ee23f93ff2c7aff0}} 
+\index{AlteraSpi@{AlteraSpi}!getRxData@{getRxData}}
+\index{getRxData@{getRxData}!AlteraSpi@{AlteraSpi}}
+\doxysubsubsection{\texorpdfstring{getRxData()}{getRxData()}}
+{\footnotesize\ttfamily uint32\+\_\+t Altera\+Spi\+::get\+Rx\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the content of the receive data register. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Content} & of the receive data register \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_altera_spi_a795896c6caa10eb02738cc77753ae1ee}\label{class_altera_spi_a795896c6caa10eb02738cc77753ae1ee}} 
+\index{AlteraSpi@{AlteraSpi}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!AlteraSpi@{AlteraSpi}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily uint32\+\_\+t Altera\+Spi\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_altera_spi_ad85a1a7e29eaf5ea851f1dd2335db61d}\label{class_altera_spi_ad85a1a7e29eaf5ea851f1dd2335db61d}} 
+\index{AlteraSpi@{AlteraSpi}!selectSlave@{selectSlave}}
+\index{selectSlave@{selectSlave}!AlteraSpi@{AlteraSpi}}
+\doxysubsubsection{\texorpdfstring{selectSlave()}{selectSlave()}}
+{\footnotesize\ttfamily void Altera\+Spi\+::select\+Slave (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_altera_spi_a1d6da8f8a46a6a72e2c2b9bd4d64625b}\label{class_altera_spi_a1d6da8f8a46a6a72e2c2b9bd4d64625b}} 
+\index{AlteraSpi@{AlteraSpi}!sendSpiCommand@{sendSpiCommand}}
+\index{sendSpiCommand@{sendSpiCommand}!AlteraSpi@{AlteraSpi}}
+\doxysubsubsection{\texorpdfstring{sendSpiCommand()}{sendSpiCommand()}}
+{\footnotesize\ttfamily int Altera\+Spi\+::send\+Spi\+Command (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{slave,  }\item[{uint32\+\_\+t}]{write\+\_\+length,  }\item[{const uint8\+\_\+t $\ast$}]{write\+\_\+data,  }\item[{uint32\+\_\+t}]{read\+\_\+length,  }\item[{uint8\+\_\+t $\ast$}]{read\+\_\+data,  }\item[{uint32\+\_\+t}]{flags }\end{DoxyParamCaption})}
+
+
+
+Send an S\+PI command. 
+
+This is a very simple routine which performs one S\+PI master transaction. It would be possible to implement a more efficient version using interrupts and sleeping threads but this is probably not worthwhile initially.
+
+
+\begin{DoxyParams}{Parameters}
+{\em slave} & Slave number select 0-\/31 \\
+\hline
+{\em write\+\_\+length} & Number of bytes to send \\
+\hline
+{\em write\+\_\+data} & A pointer to the buffer containing the data to write \\
+\hline
+{\em read\+\_\+length} & Number of bytes to receive \\
+\hline
+{\em read\+\_\+data} & A pointer to the buffer where the received data is going \\
+\hline
+{\em flags} & A bit mask, only A\+L\+T\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+T\+O\+G\+G\+L\+E\+\_\+\+S\+S\+\_\+N is used. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Number} & of bytes read -\/ in S\+PI read and write are simultaneous so it cannot be 0. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_altera_spi_ac38fdac11b408b3045567709b7a7cb7f}\label{class_altera_spi_ac38fdac11b408b3045567709b7a7cb7f}} 
+\index{AlteraSpi@{AlteraSpi}!setControl@{setControl}}
+\index{setControl@{setControl}!AlteraSpi@{AlteraSpi}}
+\doxysubsubsection{\texorpdfstring{setControl()}{setControl()}}
+{\footnotesize\ttfamily void Altera\+Spi\+::set\+Control (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_altera_spi_a8ed70b36c10b352c031575557503bb14}\label{class_altera_spi_a8ed70b36c10b352c031575557503bb14}} 
+\index{AlteraSpi@{AlteraSpi}!setTxData@{setTxData}}
+\index{setTxData@{setTxData}!AlteraSpi@{AlteraSpi}}
+\doxysubsubsection{\texorpdfstring{setTxData()}{setTxData()}}
+{\footnotesize\ttfamily void Altera\+Spi\+::set\+Tx\+Data (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Alphi/\+P\+C\+Ie\+Mini\+Software/include/\mbox{\hyperlink{_altera_spi_8h}{Altera\+Spi.\+h}}\item 
+\mbox{\hyperlink{_altera_spi_8cpp}{Altera\+Spi.\+cpp}}\end{DoxyCompactItemize}

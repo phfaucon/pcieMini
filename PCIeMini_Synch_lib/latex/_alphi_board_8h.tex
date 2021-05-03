@@ -1,0 +1,102 @@
+\hypertarget{_alphi_board_8h}{}\doxysection{C\+:/\+Alphi/\+P\+C\+Ie\+Mini\+Software/include/\+Alphi\+Board.h File Reference}
+\label{_alphi_board_8h}\index{C:/Alphi/PCIeMiniSoftware/include/AlphiBoard.h@{C:/Alphi/PCIeMiniSoftware/include/AlphiBoard.h}}
+
+
+Generic P\+C\+Ie class with Jungo driver and Altera P\+C\+Ie hardware.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Alphi\+Dll.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$wdc\+\_\+defs.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_m_i_n_i_p_c_i_e___d_e_v___c_t_x}{M\+I\+N\+I\+P\+C\+I\+E\+\_\+\+D\+E\+V\+\_\+\+C\+TX}}
+\item 
+struct \mbox{\hyperlink{struct_linear_address}{Linear\+Address}}
+\begin{DoxyCompactList}\small\item\em Memory Segment Descriptor. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_board_version}{Board\+Version}}
+\begin{DoxyCompactList}\small\item\em Board Hardware identification and version. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_pcie_cra}{Pcie\+Cra}}
+\begin{DoxyCompactList}\small\item\em P\+C\+Ie controller class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_alphi_board}{Alphi\+Board}}
+\begin{DoxyCompactList}\small\item\em Base class implementing a P\+C\+Ie board and the Jungo driver. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_alphi_board_8h_ac38724a37b444923d94072e87e1a3822}{Err\+Log}}~printf
+\item 
+\#define \mbox{\hyperlink{_alphi_board_8h_a403ed081bba0fa8fb306b8a9135d5994}{Trace\+Log}}~printf
+\item 
+\#define \mbox{\hyperlink{_alphi_board_8h_a922ce1ae64374c9410c8a999e25e82af}{C\+L\+O\+C\+K\+\_\+\+R\+E\+A\+L\+T\+I\+ME}}~0
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{_alphi_board_8h_a885a5a7a32232d18bc5635610a0b27ad}{M\+I\+N\+I\+P\+C\+I\+E\+\_\+\+I\+N\+T\+\_\+\+H\+A\+N\+D\+L\+ER}}) (W\+D\+C\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+H\+A\+N\+D\+LE h\+Dev, void $\ast$p\+Int\+Result)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{_alphi_board_8h_a7f80c9bdef23985c6262105d0d37d2a8}{M\+I\+N\+I\+P\+C\+I\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+H\+A\+N\+D\+L\+ER}}) (W\+D\+C\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+H\+A\+N\+D\+LE h\+Dev, D\+W\+O\+RD dw\+Action)
+\item 
+typedef struct \mbox{\hyperlink{struct_m_i_n_i_p_c_i_e___d_e_v___c_t_x}{M\+I\+N\+I\+P\+C\+I\+E\+\_\+\+D\+E\+V\+\_\+\+C\+TX}} $\ast$ \mbox{\hyperlink{_alphi_board_8h_ab6953355535ce858b1dcb82a418ab2f8}{P\+M\+I\+N\+I\+P\+C\+I\+E\+\_\+\+D\+E\+V\+\_\+\+C\+TX}}
+\item 
+typedef struct \mbox{\hyperlink{struct_linear_address}{Linear\+Address}} \mbox{\hyperlink{_alphi_board_8h_acb0244ca0fd9bbd57c7669f8650e223e}{Linear\+Address}}
+\begin{DoxyCompactList}\small\item\em Memory Segment Descriptor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generic P\+C\+Ie class with Jungo driver and Altera P\+C\+Ie hardware. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_alphi_board_8h_a922ce1ae64374c9410c8a999e25e82af}\label{_alphi_board_8h_a922ce1ae64374c9410c8a999e25e82af}} 
+\index{AlphiBoard.h@{AlphiBoard.h}!CLOCK\_REALTIME@{CLOCK\_REALTIME}}
+\index{CLOCK\_REALTIME@{CLOCK\_REALTIME}!AlphiBoard.h@{AlphiBoard.h}}
+\doxysubsubsection{\texorpdfstring{CLOCK\_REALTIME}{CLOCK\_REALTIME}}
+{\footnotesize\ttfamily \#define C\+L\+O\+C\+K\+\_\+\+R\+E\+A\+L\+T\+I\+ME~0}
+
+\mbox{\Hypertarget{_alphi_board_8h_ac38724a37b444923d94072e87e1a3822}\label{_alphi_board_8h_ac38724a37b444923d94072e87e1a3822}} 
+\index{AlphiBoard.h@{AlphiBoard.h}!ErrLog@{ErrLog}}
+\index{ErrLog@{ErrLog}!AlphiBoard.h@{AlphiBoard.h}}
+\doxysubsubsection{\texorpdfstring{ErrLog}{ErrLog}}
+{\footnotesize\ttfamily \#define Err\+Log~printf}
+
+\mbox{\Hypertarget{_alphi_board_8h_a403ed081bba0fa8fb306b8a9135d5994}\label{_alphi_board_8h_a403ed081bba0fa8fb306b8a9135d5994}} 
+\index{AlphiBoard.h@{AlphiBoard.h}!TraceLog@{TraceLog}}
+\index{TraceLog@{TraceLog}!AlphiBoard.h@{AlphiBoard.h}}
+\doxysubsubsection{\texorpdfstring{TraceLog}{TraceLog}}
+{\footnotesize\ttfamily \#define Trace\+Log~printf}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_alphi_board_8h_acb0244ca0fd9bbd57c7669f8650e223e}\label{_alphi_board_8h_acb0244ca0fd9bbd57c7669f8650e223e}} 
+\index{AlphiBoard.h@{AlphiBoard.h}!LinearAddress@{LinearAddress}}
+\index{LinearAddress@{LinearAddress}!AlphiBoard.h@{AlphiBoard.h}}
+\doxysubsubsection{\texorpdfstring{LinearAddress}{LinearAddress}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_linear_address}{Linear\+Address}} \mbox{\hyperlink{struct_linear_address}{Linear\+Address}}}
+
+
+
+Memory Segment Descriptor. 
+
+\mbox{\Hypertarget{_alphi_board_8h_a7f80c9bdef23985c6262105d0d37d2a8}\label{_alphi_board_8h_a7f80c9bdef23985c6262105d0d37d2a8}} 
+\index{AlphiBoard.h@{AlphiBoard.h}!MINIPCIE\_EVENT\_HANDLER@{MINIPCIE\_EVENT\_HANDLER}}
+\index{MINIPCIE\_EVENT\_HANDLER@{MINIPCIE\_EVENT\_HANDLER}!AlphiBoard.h@{AlphiBoard.h}}
+\doxysubsubsection{\texorpdfstring{MINIPCIE\_EVENT\_HANDLER}{MINIPCIE\_EVENT\_HANDLER}}
+{\footnotesize\ttfamily typedef void($\ast$ M\+I\+N\+I\+P\+C\+I\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+H\+A\+N\+D\+L\+ER) (W\+D\+C\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+H\+A\+N\+D\+LE h\+Dev, D\+W\+O\+RD dw\+Action)}
+
+\mbox{\Hypertarget{_alphi_board_8h_a885a5a7a32232d18bc5635610a0b27ad}\label{_alphi_board_8h_a885a5a7a32232d18bc5635610a0b27ad}} 
+\index{AlphiBoard.h@{AlphiBoard.h}!MINIPCIE\_INT\_HANDLER@{MINIPCIE\_INT\_HANDLER}}
+\index{MINIPCIE\_INT\_HANDLER@{MINIPCIE\_INT\_HANDLER}!AlphiBoard.h@{AlphiBoard.h}}
+\doxysubsubsection{\texorpdfstring{MINIPCIE\_INT\_HANDLER}{MINIPCIE\_INT\_HANDLER}}
+{\footnotesize\ttfamily typedef void($\ast$ M\+I\+N\+I\+P\+C\+I\+E\+\_\+\+I\+N\+T\+\_\+\+H\+A\+N\+D\+L\+ER) (W\+D\+C\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+H\+A\+N\+D\+LE h\+Dev, void $\ast$p\+Int\+Result)}
+
+\mbox{\Hypertarget{_alphi_board_8h_ab6953355535ce858b1dcb82a418ab2f8}\label{_alphi_board_8h_ab6953355535ce858b1dcb82a418ab2f8}} 
+\index{AlphiBoard.h@{AlphiBoard.h}!PMINIPCIE\_DEV\_CTX@{PMINIPCIE\_DEV\_CTX}}
+\index{PMINIPCIE\_DEV\_CTX@{PMINIPCIE\_DEV\_CTX}!AlphiBoard.h@{AlphiBoard.h}}
+\doxysubsubsection{\texorpdfstring{PMINIPCIE\_DEV\_CTX}{PMINIPCIE\_DEV\_CTX}}
+{\footnotesize\ttfamily typedef  struct \mbox{\hyperlink{struct_m_i_n_i_p_c_i_e___d_e_v___c_t_x}{M\+I\+N\+I\+P\+C\+I\+E\+\_\+\+D\+E\+V\+\_\+\+C\+TX}} $\ast$ \mbox{\hyperlink{_alphi_board_8h_ab6953355535ce858b1dcb82a418ab2f8}{P\+M\+I\+N\+I\+P\+C\+I\+E\+\_\+\+D\+E\+V\+\_\+\+C\+TX}}}
+

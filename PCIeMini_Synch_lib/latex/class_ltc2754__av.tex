@@ -1,0 +1,191 @@
+\hypertarget{class_ltc2754__av}{}\doxysection{Ltc2754\+\_\+av Class Reference}
+\label{class_ltc2754__av}\index{Ltc2754\_av@{Ltc2754\_av}}
+
+
+Synchro simulator.  
+
+
+
+
+{\ttfamily \#include $<$Ltc2754\+\_\+av.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ltc2754__av_ad1076990d71e263fb7906d393b4e5eff}{Ltc2754\+\_\+av}} (volatile void $\ast$addr)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ltc2754__av_a013fc53e92e14e11431b7893fc732bdd}{set\+Sim\+Gain}} (int chan\+Nbr, int16\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Set an individual gain register. \end{DoxyCompactList}\item 
+int16\+\_\+t \mbox{\hyperlink{class_ltc2754__av_a50afeac0ef4aeea447cce1e7481e8b8b}{get\+Sim\+Gain}} (int chan\+Nbr)
+\begin{DoxyCompactList}\small\item\em Get an individual gain register value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ltc2754__av_a02ac28eff3c1942d562d5e114526c2b7}{set\+Angle}} (double angle)
+\begin{DoxyCompactList}\small\item\em configure the sine amplitudes for a given angle \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_ltc2754__av_a81eff012b6468a43807bdc83ff9bce59}{angle\+To\+Radian}} (uint32\+\_\+t int\+Val)
+\begin{DoxyCompactList}\small\item\em fixed point angle to double \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_ltc2754__av_acbf26c4803171ce07cc8e7f38b0b2134}{radian\+To\+Angle}} (double rad)
+\begin{DoxyCompactList}\small\item\em radian angle to fixed point \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_ltc2754__av_a66071a183f1cb6a1753635008a0c0760}{get\+Frequency}} (void)
+\item 
+void \mbox{\hyperlink{class_ltc2754__av_aea73beac0dbe6b6b867c6f7c216dda4d}{set\+Frequency}} (double freq)
+\item 
+void \mbox{\hyperlink{class_ltc2754__av_a4e1e6a5d66af68dc4e9ace26925790d0}{set\+Angular\+Velocity}} (double rad)
+\item 
+double \mbox{\hyperlink{class_ltc2754__av_ada6d53dcf095ba34c51449ba47bdb528}{get\+Angular\+Velocity}} (void)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_ltc2754__av_af48e66fdafd35f0ed64e6f524a959426}{get\+Angular\+Velocity\+Raw}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Synchro simulator. 
+
+This class allows controlling the on board simulator. It consists of 4 D\+As, generating sinewaves at the proper frequency and amplitude to simulate a synchro output. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ltc2754__av_ad1076990d71e263fb7906d393b4e5eff}\label{class_ltc2754__av_ad1076990d71e263fb7906d393b4e5eff}} 
+\index{Ltc2754\_av@{Ltc2754\_av}!Ltc2754\_av@{Ltc2754\_av}}
+\index{Ltc2754\_av@{Ltc2754\_av}!Ltc2754\_av@{Ltc2754\_av}}
+\doxysubsubsection{\texorpdfstring{Ltc2754\_av()}{Ltc2754\_av()}}
+{\footnotesize\ttfamily Ltc2754\+\_\+av\+::\+Ltc2754\+\_\+av (\begin{DoxyParamCaption}\item[{volatile void $\ast$}]{addr }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+To be called only by the board open. 
+\begin{DoxyParams}{Parameters}
+{\em addr} & Base address of the board registers in user space. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ltc2754__av_a81eff012b6468a43807bdc83ff9bce59}\label{class_ltc2754__av_a81eff012b6468a43807bdc83ff9bce59}} 
+\index{Ltc2754\_av@{Ltc2754\_av}!angleToRadian@{angleToRadian}}
+\index{angleToRadian@{angleToRadian}!Ltc2754\_av@{Ltc2754\_av}}
+\doxysubsubsection{\texorpdfstring{angleToRadian()}{angleToRadian()}}
+{\footnotesize\ttfamily double Ltc2754\+\_\+av\+::angle\+To\+Radian (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{angle }\end{DoxyParamCaption})}
+
+
+
+fixed point angle to double 
+
+This function converts a 17-\/bit angle value as a radian value as double. 
+\begin{DoxyParams}{Parameters}
+{\em angle} & 17-\/bit fixed point angle. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Double} & value equivalent \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_ltc2754__av_ada6d53dcf095ba34c51449ba47bdb528}\label{class_ltc2754__av_ada6d53dcf095ba34c51449ba47bdb528}} 
+\index{Ltc2754\_av@{Ltc2754\_av}!getAngularVelocity@{getAngularVelocity}}
+\index{getAngularVelocity@{getAngularVelocity}!Ltc2754\_av@{Ltc2754\_av}}
+\doxysubsubsection{\texorpdfstring{getAngularVelocity()}{getAngularVelocity()}}
+{\footnotesize\ttfamily double Ltc2754\+\_\+av\+::get\+Angular\+Velocity (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_ltc2754__av_af48e66fdafd35f0ed64e6f524a959426}\label{class_ltc2754__av_af48e66fdafd35f0ed64e6f524a959426}} 
+\index{Ltc2754\_av@{Ltc2754\_av}!getAngularVelocityRaw@{getAngularVelocityRaw}}
+\index{getAngularVelocityRaw@{getAngularVelocityRaw}!Ltc2754\_av@{Ltc2754\_av}}
+\doxysubsubsection{\texorpdfstring{getAngularVelocityRaw()}{getAngularVelocityRaw()}}
+{\footnotesize\ttfamily uint32\+\_\+t Ltc2754\+\_\+av\+::get\+Angular\+Velocity\+Raw (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_ltc2754__av_a66071a183f1cb6a1753635008a0c0760}\label{class_ltc2754__av_a66071a183f1cb6a1753635008a0c0760}} 
+\index{Ltc2754\_av@{Ltc2754\_av}!getFrequency@{getFrequency}}
+\index{getFrequency@{getFrequency}!Ltc2754\_av@{Ltc2754\_av}}
+\doxysubsubsection{\texorpdfstring{getFrequency()}{getFrequency()}}
+{\footnotesize\ttfamily double Ltc2754\+\_\+av\+::get\+Frequency (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ltc2754__av_a50afeac0ef4aeea447cce1e7481e8b8b}\label{class_ltc2754__av_a50afeac0ef4aeea447cce1e7481e8b8b}} 
+\index{Ltc2754\_av@{Ltc2754\_av}!getSimGain@{getSimGain}}
+\index{getSimGain@{getSimGain}!Ltc2754\_av@{Ltc2754\_av}}
+\doxysubsubsection{\texorpdfstring{getSimGain()}{getSimGain()}}
+{\footnotesize\ttfamily int16\+\_\+t Ltc2754\+\_\+av\+::get\+Sim\+Gain (\begin{DoxyParamCaption}\item[{int}]{chan\+Nbr }\end{DoxyParamCaption})}
+
+
+
+Get an individual gain register value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chan\+Nbr} & Gain number register (0 to 2). If the number is invalid, the function returns 0. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 16-\/bit} & signed integer value \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_ltc2754__av_acbf26c4803171ce07cc8e7f38b0b2134}\label{class_ltc2754__av_acbf26c4803171ce07cc8e7f38b0b2134}} 
+\index{Ltc2754\_av@{Ltc2754\_av}!radianToAngle@{radianToAngle}}
+\index{radianToAngle@{radianToAngle}!Ltc2754\_av@{Ltc2754\_av}}
+\doxysubsubsection{\texorpdfstring{radianToAngle()}{radianToAngle()}}
+{\footnotesize\ttfamily uint32\+\_\+t Ltc2754\+\_\+av\+::radian\+To\+Angle (\begin{DoxyParamCaption}\item[{double}]{rad }\end{DoxyParamCaption})}
+
+
+
+radian angle to fixed point 
+
+This function converts a radian value as double as a 17-\/bit angle value. 
+\begin{DoxyParams}{Parameters}
+{\em rad} & A double between -\/PI and +PI . \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 17-\/bit} & fixed point angle \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_ltc2754__av_a02ac28eff3c1942d562d5e114526c2b7}\label{class_ltc2754__av_a02ac28eff3c1942d562d5e114526c2b7}} 
+\index{Ltc2754\_av@{Ltc2754\_av}!setAngle@{setAngle}}
+\index{setAngle@{setAngle}!Ltc2754\_av@{Ltc2754\_av}}
+\doxysubsubsection{\texorpdfstring{setAngle()}{setAngle()}}
+{\footnotesize\ttfamily void Ltc2754\+\_\+av\+::set\+Angle (\begin{DoxyParamCaption}\item[{double}]{angle }\end{DoxyParamCaption})}
+
+
+
+configure the sine amplitudes for a given angle 
+
+For the synchro resolver, the angle is expressed as the amplitude of 3 sine waves.~\newline
+ This function, if given an angle calculates the gains of the 3 DA channels and thus the amplitudes of the sine waves generated. 
+\begin{DoxyParams}{Parameters}
+{\em angle} & A double between 0 and PI. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ltc2754__av_a4e1e6a5d66af68dc4e9ace26925790d0}\label{class_ltc2754__av_a4e1e6a5d66af68dc4e9ace26925790d0}} 
+\index{Ltc2754\_av@{Ltc2754\_av}!setAngularVelocity@{setAngularVelocity}}
+\index{setAngularVelocity@{setAngularVelocity}!Ltc2754\_av@{Ltc2754\_av}}
+\doxysubsubsection{\texorpdfstring{setAngularVelocity()}{setAngularVelocity()}}
+{\footnotesize\ttfamily void Ltc2754\+\_\+av\+::set\+Angular\+Velocity (\begin{DoxyParamCaption}\item[{double}]{rad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_ltc2754__av_aea73beac0dbe6b6b867c6f7c216dda4d}\label{class_ltc2754__av_aea73beac0dbe6b6b867c6f7c216dda4d}} 
+\index{Ltc2754\_av@{Ltc2754\_av}!setFrequency@{setFrequency}}
+\index{setFrequency@{setFrequency}!Ltc2754\_av@{Ltc2754\_av}}
+\doxysubsubsection{\texorpdfstring{setFrequency()}{setFrequency()}}
+{\footnotesize\ttfamily void Ltc2754\+\_\+av\+::set\+Frequency (\begin{DoxyParamCaption}\item[{double}]{freq }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ltc2754__av_a013fc53e92e14e11431b7893fc732bdd}\label{class_ltc2754__av_a013fc53e92e14e11431b7893fc732bdd}} 
+\index{Ltc2754\_av@{Ltc2754\_av}!setSimGain@{setSimGain}}
+\index{setSimGain@{setSimGain}!Ltc2754\_av@{Ltc2754\_av}}
+\doxysubsubsection{\texorpdfstring{setSimGain()}{setSimGain()}}
+{\footnotesize\ttfamily void Ltc2754\+\_\+av\+::set\+Sim\+Gain (\begin{DoxyParamCaption}\item[{int}]{chan\+Nbr,  }\item[{int16\+\_\+t}]{val }\end{DoxyParamCaption})}
+
+
+
+Set an individual gain register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chan\+Nbr} & Gain number register (0 to 2). If the number is invalid, the function does nothing. \\
+\hline
+{\em val} & 16-\/bit value to put in the gain register. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Alphi/\+P\+C\+Ie\+Mini\+Software/include/\mbox{\hyperlink{_ltc2754__av_8h}{Ltc2754\+\_\+av.\+h}}\item 
+\mbox{\hyperlink{_ltc2754__av_8cpp}{Ltc2754\+\_\+av.\+cpp}}\end{DoxyCompactItemize}

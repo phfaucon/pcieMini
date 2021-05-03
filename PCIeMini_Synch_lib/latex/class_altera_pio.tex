@@ -1,0 +1,137 @@
+\hypertarget{class_altera_pio}{}\doxysection{Altera\+Pio Class Reference}
+\label{class_altera_pio}\index{AlteraPio@{AlteraPio}}
+
+
+Altera Avalon Pio controller class.  
+
+
+
+
+{\ttfamily \#include $<$Altera\+Pio.\+h$>$}
+
+Inheritance diagram for Altera\+Pio\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_altera_pio}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_altera_pio_a6c2394fa044b78c75d9611f0bdb3616e}{Altera\+Pio}} (volatile void $\ast$addr, uint16\+\_\+t capabilities)
+\item 
+\mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} \mbox{\hyperlink{class_altera_pio_a3ee719a37d954743724d55eaaef3e473}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the P\+IO. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_altera_pio_a42bd3795428648f05238b17512232897}{get\+Data}} ()
+\item 
+\mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} \mbox{\hyperlink{class_altera_pio_abdb1366d85f2b6e5b07301cd2ac0939f}{set\+Data}} (uint32\+\_\+t data)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_altera_pio_ac19a94514aeba24e1deeab89d6ad546a}{get\+Irq\+Mask}} ()
+\item 
+\mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} \mbox{\hyperlink{class_altera_pio_ad8917ca2092a7950adb583d16cb08840}{set\+Irq\+Mask}} (uint32\+\_\+t mask)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_altera_pio_a5a9645defc27948b8ba247abb6c4aa25}{get\+Edge\+Capture}} ()
+\item 
+\mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} \mbox{\hyperlink{class_altera_pio_aedee37c7f4a0039af1a16660655e22c7}{clear\+Edge\+Capture}} (uint32\+\_\+t mask)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const uint16\+\_\+t \mbox{\hyperlink{class_altera_pio_a5d34635db0163610fcaee9d5ea111fa8}{C\+A\+P\+\_\+\+I\+N\+P\+UT}} = 0x01
+\item 
+static const uint16\+\_\+t \mbox{\hyperlink{class_altera_pio_a48de586ea64b131c5cd39466d99a8cfa}{C\+A\+P\+\_\+\+O\+U\+T\+P\+UT}} = 0x02
+\item 
+static const uint16\+\_\+t \mbox{\hyperlink{class_altera_pio_af6e28d285e24e7f5aee9661610e590a5}{C\+A\+P\+\_\+\+I\+N\+P\+U\+T\+\_\+\+O\+U\+T\+P\+UT}} = 0x03
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Altera Avalon Pio controller class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_altera_pio_a6c2394fa044b78c75d9611f0bdb3616e}\label{class_altera_pio_a6c2394fa044b78c75d9611f0bdb3616e}} 
+\index{AlteraPio@{AlteraPio}!AlteraPio@{AlteraPio}}
+\index{AlteraPio@{AlteraPio}!AlteraPio@{AlteraPio}}
+\doxysubsubsection{\texorpdfstring{AlteraPio()}{AlteraPio()}}
+{\footnotesize\ttfamily Altera\+Pio\+::\+Altera\+Pio (\begin{DoxyParamCaption}\item[{volatile void $\ast$}]{addr,  }\item[{uint16\+\_\+t}]{capabilities }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_altera_pio_aedee37c7f4a0039af1a16660655e22c7}\label{class_altera_pio_aedee37c7f4a0039af1a16660655e22c7}} 
+\index{AlteraPio@{AlteraPio}!clearEdgeCapture@{clearEdgeCapture}}
+\index{clearEdgeCapture@{clearEdgeCapture}!AlteraPio@{AlteraPio}}
+\doxysubsubsection{\texorpdfstring{clearEdgeCapture()}{clearEdgeCapture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} Altera\+Pio\+::clear\+Edge\+Capture (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{mask }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_altera_pio_a42bd3795428648f05238b17512232897}\label{class_altera_pio_a42bd3795428648f05238b17512232897}} 
+\index{AlteraPio@{AlteraPio}!getData@{getData}}
+\index{getData@{getData}!AlteraPio@{AlteraPio}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily uint32\+\_\+t Altera\+Pio\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_altera_pio_a5a9645defc27948b8ba247abb6c4aa25}\label{class_altera_pio_a5a9645defc27948b8ba247abb6c4aa25}} 
+\index{AlteraPio@{AlteraPio}!getEdgeCapture@{getEdgeCapture}}
+\index{getEdgeCapture@{getEdgeCapture}!AlteraPio@{AlteraPio}}
+\doxysubsubsection{\texorpdfstring{getEdgeCapture()}{getEdgeCapture()}}
+{\footnotesize\ttfamily uint32\+\_\+t Altera\+Pio\+::get\+Edge\+Capture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_altera_pio_ac19a94514aeba24e1deeab89d6ad546a}\label{class_altera_pio_ac19a94514aeba24e1deeab89d6ad546a}} 
+\index{AlteraPio@{AlteraPio}!getIrqMask@{getIrqMask}}
+\index{getIrqMask@{getIrqMask}!AlteraPio@{AlteraPio}}
+\doxysubsubsection{\texorpdfstring{getIrqMask()}{getIrqMask()}}
+{\footnotesize\ttfamily uint32\+\_\+t Altera\+Pio\+::get\+Irq\+Mask (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_altera_pio_a3ee719a37d954743724d55eaaef3e473}\label{class_altera_pio_a3ee719a37d954743724d55eaaef3e473}} 
+\index{AlteraPio@{AlteraPio}!reset@{reset}}
+\index{reset@{reset}!AlteraPio@{AlteraPio}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} Altera\+Pio\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset the P\+IO. 
+
+Whenever supported, set the direction register to all input, the data register to 0, and disable interrupts. 
+\begin{DoxyRetVals}{Return values}
+{\em Always} & success \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_altera_pio_abdb1366d85f2b6e5b07301cd2ac0939f}\label{class_altera_pio_abdb1366d85f2b6e5b07301cd2ac0939f}} 
+\index{AlteraPio@{AlteraPio}!setData@{setData}}
+\index{setData@{setData}!AlteraPio@{AlteraPio}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} Altera\+Pio\+::set\+Data (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_altera_pio_ad8917ca2092a7950adb583d16cb08840}\label{class_altera_pio_ad8917ca2092a7950adb583d16cb08840}} 
+\index{AlteraPio@{AlteraPio}!setIrqMask@{setIrqMask}}
+\index{setIrqMask@{setIrqMask}!AlteraPio@{AlteraPio}}
+\doxysubsubsection{\texorpdfstring{setIrqMask()}{setIrqMask()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} Altera\+Pio\+::set\+Irq\+Mask (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{mask }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_altera_pio_a5d34635db0163610fcaee9d5ea111fa8}\label{class_altera_pio_a5d34635db0163610fcaee9d5ea111fa8}} 
+\index{AlteraPio@{AlteraPio}!CAP\_INPUT@{CAP\_INPUT}}
+\index{CAP\_INPUT@{CAP\_INPUT}!AlteraPio@{AlteraPio}}
+\doxysubsubsection{\texorpdfstring{CAP\_INPUT}{CAP\_INPUT}}
+{\footnotesize\ttfamily const uint16\+\_\+t Altera\+Pio\+::\+C\+A\+P\+\_\+\+I\+N\+P\+UT = 0x01\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_altera_pio_af6e28d285e24e7f5aee9661610e590a5}\label{class_altera_pio_af6e28d285e24e7f5aee9661610e590a5}} 
+\index{AlteraPio@{AlteraPio}!CAP\_INPUT\_OUTPUT@{CAP\_INPUT\_OUTPUT}}
+\index{CAP\_INPUT\_OUTPUT@{CAP\_INPUT\_OUTPUT}!AlteraPio@{AlteraPio}}
+\doxysubsubsection{\texorpdfstring{CAP\_INPUT\_OUTPUT}{CAP\_INPUT\_OUTPUT}}
+{\footnotesize\ttfamily const uint16\+\_\+t Altera\+Pio\+::\+C\+A\+P\+\_\+\+I\+N\+P\+U\+T\+\_\+\+O\+U\+T\+P\+UT = 0x03\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_altera_pio_a48de586ea64b131c5cd39466d99a8cfa}\label{class_altera_pio_a48de586ea64b131c5cd39466d99a8cfa}} 
+\index{AlteraPio@{AlteraPio}!CAP\_OUTPUT@{CAP\_OUTPUT}}
+\index{CAP\_OUTPUT@{CAP\_OUTPUT}!AlteraPio@{AlteraPio}}
+\doxysubsubsection{\texorpdfstring{CAP\_OUTPUT}{CAP\_OUTPUT}}
+{\footnotesize\ttfamily const uint16\+\_\+t Altera\+Pio\+::\+C\+A\+P\+\_\+\+O\+U\+T\+P\+UT = 0x02\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Alphi/\+P\+C\+Ie\+Mini\+Software/include/\mbox{\hyperlink{_altera_pio_8h}{Altera\+Pio.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,2 @@
+#define PCIEMINISYNCHLIB_API __declspec(dllexport)
+#define PCIEMINISYNCHLIB_API __declspec(dllimport)

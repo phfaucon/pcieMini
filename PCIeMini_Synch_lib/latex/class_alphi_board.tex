@@ -1,0 +1,428 @@
+\hypertarget{class_alphi_board}{}\doxysection{Alphi\+Board Class Reference}
+\label{class_alphi_board}\index{AlphiBoard@{AlphiBoard}}
+
+
+Base class implementing a P\+C\+Ie board and the Jungo driver.  
+
+
+
+
+{\ttfamily \#include $<$Alphi\+Board.\+h$>$}
+
+Inheritance diagram for Alphi\+Board\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_alphi_board}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_alphi_board_a960307d2f125697448b6ec7f2c250a3f}{Alphi\+Board}} (U\+I\+N\+T16 vendor\+Id, U\+I\+N\+T16 device\+Id)
+\item 
+\mbox{\hyperlink{class_alphi_board_a494b7320f023b8b4109acfba244a92b0}{$\sim$\+Alphi\+Board}} (void)
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_alphi_dll_8h_a570a903331bed6f464de16e2b037f108}{H\+R\+E\+S\+U\+LT}} \mbox{\hyperlink{class_alphi_board_a5a526bd9fbe880ee877cbe5f99862c65}{Open}} (int brd\+Nbr)
+\begin{DoxyCompactList}\small\item\em Open a board. \end{DoxyCompactList}\item 
+D\+W\+O\+RD \mbox{\hyperlink{class_alphi_board_ac01651e10d92e6014f81ea69bac7d086}{reset}} ()
+\begin{DoxyCompactList}\small\item\em reset some of the board resources \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_alphi_board_ad89c7cc0c2e6f02c78bd36806fc6ae37}{get\+Fpga\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Get the F\+P\+GA ID of. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{class_alphi_board_a51b344678e5242c589373c79caacffae}{get\+Fpga\+Time\+Stamp}} ()
+\begin{DoxyCompactList}\small\item\em Return the timestamp corresponding to when the F\+P\+GA was compiled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alphi_board_a9d11e101513eb8e29dc3ea528b5eb1bd}{set\+Verbose}} (int \mbox{\hyperlink{class_alphi_board_ae9864514fab56635b03bb5fd435aad6d}{verbose}})
+\begin{DoxyCompactList}\small\item\em set the verbose flag \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_alphi_board_a2378b20de2d94679ba40b4eef3f5faed}{Is\+Valid\+Device}} (const C\+H\+AR $\ast$s\+Func)
+\begin{DoxyCompactList}\small\item\em Validate a W\+DC device handle. \end{DoxyCompactList}\item 
+D\+W\+O\+RD \mbox{\hyperlink{class_alphi_board_a497724f4b1903c09e8bc326fbe082cf1}{hook\+Interrupt\+Service\+Routine}} (uint32\+\_\+t mask, \mbox{\hyperlink{_alphi_board_8h_a885a5a7a32232d18bc5635610a0b27ad}{M\+I\+N\+I\+P\+C\+I\+E\+\_\+\+I\+N\+T\+\_\+\+H\+A\+N\+D\+L\+ER}} uicr, void $\ast$user\+Data)
+\begin{DoxyCompactList}\small\item\em Setup the interrupt of the board. \end{DoxyCompactList}\item 
+D\+W\+O\+RD \mbox{\hyperlink{class_alphi_board_a57a7ec6378ba807f9ff49e9fccb45542}{hook\+Interrupt\+Service\+Routine}} (\mbox{\hyperlink{_alphi_board_8h_a885a5a7a32232d18bc5635610a0b27ad}{M\+I\+N\+I\+P\+C\+I\+E\+\_\+\+I\+N\+T\+\_\+\+H\+A\+N\+D\+L\+ER}} uicr)
+\begin{DoxyCompactList}\small\item\em Set an interrupt handling routine. \end{DoxyCompactList}\item 
+D\+W\+O\+RD \mbox{\hyperlink{class_alphi_board_aad9781f8084a6ef00e526f7e52115b1d}{unhook\+Interrupt\+Service\+Routine}} ()
+\begin{DoxyCompactList}\small\item\em Disable the board interrupt. \end{DoxyCompactList}\item 
+D\+W\+O\+RD \mbox{\hyperlink{class_alphi_board_a801932bad79bca3705205b4f4d20f912}{enable\+Interrupts}} ()
+\begin{DoxyCompactList}\small\item\em Enable the interrupts from the board. \end{DoxyCompactList}\item 
+D\+W\+O\+RD \mbox{\hyperlink{class_alphi_board_a653490b9c1224fb02774c0fd343f8578}{disable\+Interrupts}} ()
+\begin{DoxyCompactList}\small\item\em Disable the interrupts from the board. \end{DoxyCompactList}\item 
+D\+W\+O\+RD \mbox{\hyperlink{class_alphi_board_a2d428bd49d711d198666298604775a23}{Close}} ()
+\begin{DoxyCompactList}\small\item\em Close a device handle. \end{DoxyCompactList}\item 
+volatile void $\ast$ \mbox{\hyperlink{class_alphi_board_a30bd230121c81a638721ab945192c7d8}{get\+Bar0\+Address}} (size\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em Return a pointer to an object in B\+AR 0. \end{DoxyCompactList}\item 
+volatile void $\ast$ \mbox{\hyperlink{class_alphi_board_a2a50c38b6cfdd9ee34265e87156fb239}{get\+Bar2\+Address}} (size\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em Return a pointer to an object in B\+AR 2. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_alphi_board_a89f3a4f03d6b96e6d015b35c82049250}{Ms\+Sleep}} (int ms)
+\begin{DoxyCompactList}\small\item\em Millisecond Delay Function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_linear_address}{Linear\+Address}} \mbox{\hyperlink{class_alphi_board_acf3b157a5f03f5a444bcb859b05d851a}{bar0}}
+\begin{DoxyCompactList}\small\item\em Memory descriptor for the B\+A\+R0 in user memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_linear_address}{Linear\+Address}} \mbox{\hyperlink{class_alphi_board_abffc0ba72d6f788f2bb3ef87d88471b7}{bar2}}
+\begin{DoxyCompactList}\small\item\em Memory descriptor for the B\+A\+R2 in user memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pcie_cra}{Pcie\+Cra}} $\ast$ \mbox{\hyperlink{class_alphi_board_a31c3d521b7bb2714be68de55b00ba01d}{cra}}
+\item 
+\mbox{\hyperlink{class_board_version}{Board\+Version}} $\ast$ \mbox{\hyperlink{class_alphi_board_aad6bf4e0b1601a1315a6ad72e95fa276}{sysid}}
+\begin{DoxyCompactList}\small\item\em Board identification. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_alphi_board_ae9864514fab56635b03bb5fd435aad6d}{verbose}}
+\item 
+D\+W\+O\+RD \mbox{\hyperlink{class_alphi_board_a5e4cf06b870ccd1c6a8328d975f59da2}{lib\+Status}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+D\+W\+O\+RD \mbox{\hyperlink{class_alphi_board_aee5f15a878b0331545e04d8d77a2eddf}{Disable\+Interrupts}} ()
+\begin{DoxyCompactList}\small\item\em Disable P\+C\+Ie interrupts. \end{DoxyCompactList}\item 
+D\+W\+O\+RD \mbox{\hyperlink{class_alphi_board_afda68c59105774e13a51f54dca73e130}{Enable\+Interrupts}} ()
+\begin{DoxyCompactList}\small\item\em Enable P\+C\+Ie interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class implementing a P\+C\+Ie board and the Jungo driver. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_alphi_board_a960307d2f125697448b6ec7f2c250a3f}\label{class_alphi_board_a960307d2f125697448b6ec7f2c250a3f}} 
+\index{AlphiBoard@{AlphiBoard}!AlphiBoard@{AlphiBoard}}
+\index{AlphiBoard@{AlphiBoard}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{AlphiBoard()}{AlphiBoard()}}
+{\footnotesize\ttfamily Alphi\+Board\+::\+Alphi\+Board (\begin{DoxyParamCaption}\item[{U\+I\+N\+T16}]{vendor\+Id,  }\item[{U\+I\+N\+T16}]{device\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_alphi_board_a494b7320f023b8b4109acfba244a92b0}\label{class_alphi_board_a494b7320f023b8b4109acfba244a92b0}} 
+\index{AlphiBoard@{AlphiBoard}!````~AlphiBoard@{$\sim$AlphiBoard}}
+\index{````~AlphiBoard@{$\sim$AlphiBoard}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{$\sim$AlphiBoard()}{~AlphiBoard()}}
+{\footnotesize\ttfamily Alphi\+Board\+::$\sim$\+Alphi\+Board (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Will close the connection to the board if needed. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_alphi_board_a2d428bd49d711d198666298604775a23}\label{class_alphi_board_a2d428bd49d711d198666298604775a23}} 
+\index{AlphiBoard@{AlphiBoard}!Close@{Close}}
+\index{Close@{Close}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily D\+W\+O\+RD Alphi\+Board\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Close a device handle. 
+
+\begin{DoxyReturn}{Returns}
+status, a Jungo status code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_alphi_board_a653490b9c1224fb02774c0fd343f8578}\label{class_alphi_board_a653490b9c1224fb02774c0fd343f8578}} 
+\index{AlphiBoard@{AlphiBoard}!disableInterrupts@{disableInterrupts}}
+\index{disableInterrupts@{disableInterrupts}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{disableInterrupts()}{disableInterrupts()}}
+{\footnotesize\ttfamily D\+W\+O\+RD Alphi\+Board\+::disable\+Interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disable the interrupts from the board. 
+
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+C\+O\+D\+E\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR if successful. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_alphi_board_aee5f15a878b0331545e04d8d77a2eddf}\label{class_alphi_board_aee5f15a878b0331545e04d8d77a2eddf}} 
+\index{AlphiBoard@{AlphiBoard}!DisableInterrupts@{DisableInterrupts}}
+\index{DisableInterrupts@{DisableInterrupts}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{DisableInterrupts()}{DisableInterrupts()}}
+{\footnotesize\ttfamily D\+W\+O\+RD Alphi\+Board\+::\+Disable\+Interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Disable P\+C\+Ie interrupts. 
+
+Disable the generation of P\+C\+Ie interrupts by the P\+C\+Ie interface. 
+\begin{DoxyRetVals}{Return values}
+{\em Status} & code \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_alphi_board_a801932bad79bca3705205b4f4d20f912}\label{class_alphi_board_a801932bad79bca3705205b4f4d20f912}} 
+\index{AlphiBoard@{AlphiBoard}!enableInterrupts@{enableInterrupts}}
+\index{enableInterrupts@{enableInterrupts}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{enableInterrupts()}{enableInterrupts()}}
+{\footnotesize\ttfamily D\+W\+O\+RD Alphi\+Board\+::enable\+Interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enable the interrupts from the board. 
+
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+C\+O\+D\+E\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR if successful. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_alphi_board_afda68c59105774e13a51f54dca73e130}\label{class_alphi_board_afda68c59105774e13a51f54dca73e130}} 
+\index{AlphiBoard@{AlphiBoard}!EnableInterrupts@{EnableInterrupts}}
+\index{EnableInterrupts@{EnableInterrupts}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{EnableInterrupts()}{EnableInterrupts()}}
+{\footnotesize\ttfamily D\+W\+O\+RD Alphi\+Board\+::\+Enable\+Interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Enable P\+C\+Ie interrupts. 
+
+Enable the generation of P\+C\+Ie interrupts by the P\+C\+Ie interface only. This is a low level function that does not do anything board specific for the interrupt generation. 
+\begin{DoxyRetVals}{Return values}
+{\em Status} & code \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_alphi_board_a30bd230121c81a638721ab945192c7d8}\label{class_alphi_board_a30bd230121c81a638721ab945192c7d8}} 
+\index{AlphiBoard@{AlphiBoard}!getBar0Address@{getBar0Address}}
+\index{getBar0Address@{getBar0Address}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{getBar0Address()}{getBar0Address()}}
+{\footnotesize\ttfamily volatile void $\ast$ Alphi\+Board\+::get\+Bar0\+Address (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{offset }\end{DoxyParamCaption})}
+
+
+
+Return a pointer to an object in B\+AR 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & Offset in B\+A\+R0 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Pointer} & to the object \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_alphi_board_a2a50c38b6cfdd9ee34265e87156fb239}\label{class_alphi_board_a2a50c38b6cfdd9ee34265e87156fb239}} 
+\index{AlphiBoard@{AlphiBoard}!getBar2Address@{getBar2Address}}
+\index{getBar2Address@{getBar2Address}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{getBar2Address()}{getBar2Address()}}
+{\footnotesize\ttfamily volatile void $\ast$ Alphi\+Board\+::get\+Bar2\+Address (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{offset }\end{DoxyParamCaption})}
+
+
+
+Return a pointer to an object in B\+AR 2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & Offset in B\+A\+R2 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Pointer} & to the object \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_alphi_board_ad89c7cc0c2e6f02c78bd36806fc6ae37}\label{class_alphi_board_ad89c7cc0c2e6f02c78bd36806fc6ae37}} 
+\index{AlphiBoard@{AlphiBoard}!getFpgaID@{getFpgaID}}
+\index{getFpgaID@{getFpgaID}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{getFpgaID()}{getFpgaID()}}
+{\footnotesize\ttfamily uint32\+\_\+t Alphi\+Board\+::get\+Fpga\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the F\+P\+GA ID of. 
+
+\begin{DoxyReturn}{Returns}
+The F\+P\+GA ID. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_alphi_board_a51b344678e5242c589373c79caacffae}\label{class_alphi_board_a51b344678e5242c589373c79caacffae}} 
+\index{AlphiBoard@{AlphiBoard}!getFpgaTimeStamp@{getFpgaTimeStamp}}
+\index{getFpgaTimeStamp@{getFpgaTimeStamp}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{getFpgaTimeStamp()}{getFpgaTimeStamp()}}
+{\footnotesize\ttfamily time\+\_\+t Alphi\+Board\+::get\+Fpga\+Time\+Stamp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the timestamp corresponding to when the F\+P\+GA was compiled. 
+
+\begin{DoxyReturn}{Returns}
+a timestamp. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_alphi_board_a57a7ec6378ba807f9ff49e9fccb45542}\label{class_alphi_board_a57a7ec6378ba807f9ff49e9fccb45542}} 
+\index{AlphiBoard@{AlphiBoard}!hookInterruptServiceRoutine@{hookInterruptServiceRoutine}}
+\index{hookInterruptServiceRoutine@{hookInterruptServiceRoutine}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{hookInterruptServiceRoutine()}{hookInterruptServiceRoutine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily D\+W\+O\+RD Alphi\+Board\+::hook\+Interrupt\+Service\+Routine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_alphi_board_8h_a885a5a7a32232d18bc5635610a0b27ad}{M\+I\+N\+I\+P\+C\+I\+E\+\_\+\+I\+N\+T\+\_\+\+H\+A\+N\+D\+L\+ER}}}]{uicr }\end{DoxyParamCaption})}
+
+
+
+Set an interrupt handling routine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uicr} & user callback routine typedef void (\+\_\+\+\_\+stdcall $\ast$\+Users\+Int\+Completion\+Routine)(void $\ast$, uint32\+\_\+t); \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+C\+O\+D\+E\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR if successful. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_alphi_board_a497724f4b1903c09e8bc326fbe082cf1}\label{class_alphi_board_a497724f4b1903c09e8bc326fbe082cf1}} 
+\index{AlphiBoard@{AlphiBoard}!hookInterruptServiceRoutine@{hookInterruptServiceRoutine}}
+\index{hookInterruptServiceRoutine@{hookInterruptServiceRoutine}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{hookInterruptServiceRoutine()}{hookInterruptServiceRoutine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily D\+W\+O\+RD Alphi\+Board\+::hook\+Interrupt\+Service\+Routine (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{mask,  }\item[{\mbox{\hyperlink{_alphi_board_8h_a885a5a7a32232d18bc5635610a0b27ad}{M\+I\+N\+I\+P\+C\+I\+E\+\_\+\+I\+N\+T\+\_\+\+H\+A\+N\+D\+L\+ER}}}]{uicr,  }\item[{void $\ast$}]{user\+Data }\end{DoxyParamCaption})}
+
+
+
+Setup the interrupt of the board. 
+
+Specify and interrupt service routine and enable the interrupts. 
+\begin{DoxyParams}{Parameters}
+{\em mask} & board dependent interrupt mask. \\
+\hline
+{\em uicr} & pointer to the interrupt service routine. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+W\+D\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+U\+C\+C\+E\+SS when the operation succeeded W\+D\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER if the board is not opened W\+D\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED if the board does not have an interrupt resource W\+D\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+D\+O\+NE if there is already an isr active for the interrupt. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_alphi_board_a2378b20de2d94679ba40b4eef3f5faed}\label{class_alphi_board_a2378b20de2d94679ba40b4eef3f5faed}} 
+\index{AlphiBoard@{AlphiBoard}!IsValidDevice@{IsValidDevice}}
+\index{IsValidDevice@{IsValidDevice}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{IsValidDevice()}{IsValidDevice()}}
+{\footnotesize\ttfamily bool Alphi\+Board\+::\+Is\+Valid\+Device (\begin{DoxyParamCaption}\item[{const C\+H\+AR $\ast$}]{s\+Func }\end{DoxyParamCaption})}
+
+
+
+Validate a W\+DC device handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s\+Func} & C-\/string with name of the function e.\+g. \char`\"{}\+Int\+Enable\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if the device context exists. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_alphi_board_a89f3a4f03d6b96e6d015b35c82049250}\label{class_alphi_board_a89f3a4f03d6b96e6d015b35c82049250}} 
+\index{AlphiBoard@{AlphiBoard}!MsSleep@{MsSleep}}
+\index{MsSleep@{MsSleep}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{MsSleep()}{MsSleep()}}
+{\footnotesize\ttfamily static void Alphi\+Board\+::\+Ms\+Sleep (\begin{DoxyParamCaption}\item[{int}]{ms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Millisecond Delay Function. 
+
+\mbox{\Hypertarget{class_alphi_board_a5a526bd9fbe880ee877cbe5f99862c65}\label{class_alphi_board_a5a526bd9fbe880ee877cbe5f99862c65}} 
+\index{AlphiBoard@{AlphiBoard}!Open@{Open}}
+\index{Open@{Open}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{Open()}{Open()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_alphi_dll_8h_a570a903331bed6f464de16e2b037f108}{H\+R\+E\+S\+U\+LT}} Alphi\+Board\+::\+Open (\begin{DoxyParamCaption}\item[{int}]{brd\+Nbr }\end{DoxyParamCaption})}
+
+
+
+Open a board. 
+
+Establishes a connection to a board. 
+\begin{DoxyParams}{Parameters}
+{\em brd\+Nbr} & the board index to open. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+W\+D\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND if there is no board corresponding to the number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_alphi_board_ac01651e10d92e6014f81ea69bac7d086}\label{class_alphi_board_ac01651e10d92e6014f81ea69bac7d086}} 
+\index{AlphiBoard@{AlphiBoard}!reset@{reset}}
+\index{reset@{reset}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily D\+W\+O\+RD Alphi\+Board\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+reset some of the board resources 
+
+\mbox{\Hypertarget{class_alphi_board_a9d11e101513eb8e29dc3ea528b5eb1bd}\label{class_alphi_board_a9d11e101513eb8e29dc3ea528b5eb1bd}} 
+\index{AlphiBoard@{AlphiBoard}!setVerbose@{setVerbose}}
+\index{setVerbose@{setVerbose}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{setVerbose()}{setVerbose()}}
+{\footnotesize\ttfamily void Alphi\+Board\+::set\+Verbose (\begin{DoxyParamCaption}\item[{int}]{vb }\end{DoxyParamCaption})}
+
+
+
+set the verbose flag 
+
+The verbose value is used to send more information to the log file or console. It is only partially implemented. 
+\begin{DoxyParams}{Parameters}
+{\em vb} & Verbosity level. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_alphi_board_aad9781f8084a6ef00e526f7e52115b1d}\label{class_alphi_board_aad9781f8084a6ef00e526f7e52115b1d}} 
+\index{AlphiBoard@{AlphiBoard}!unhookInterruptServiceRoutine@{unhookInterruptServiceRoutine}}
+\index{unhookInterruptServiceRoutine@{unhookInterruptServiceRoutine}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{unhookInterruptServiceRoutine()}{unhookInterruptServiceRoutine()}}
+{\footnotesize\ttfamily D\+W\+O\+RD Alphi\+Board\+::unhook\+Interrupt\+Service\+Routine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disable the board interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mask} & board dependent interrupt mask. \\
+\hline
+{\em uicr} & pointer to the interrupt service routine. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+W\+D\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+U\+C\+C\+E\+SS when the operation succeeded W\+D\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER if the board is not opened W\+D\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED if the board does not have an interrupt resource W\+D\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+D\+O\+NE if there the interrupt is already disabled. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_alphi_board_acf3b157a5f03f5a444bcb859b05d851a}\label{class_alphi_board_acf3b157a5f03f5a444bcb859b05d851a}} 
+\index{AlphiBoard@{AlphiBoard}!bar0@{bar0}}
+\index{bar0@{bar0}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{bar0}{bar0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_linear_address}{Linear\+Address}} Alphi\+Board\+::bar0}
+
+
+
+Memory descriptor for the B\+A\+R0 in user memory. 
+
+\mbox{\Hypertarget{class_alphi_board_abffc0ba72d6f788f2bb3ef87d88471b7}\label{class_alphi_board_abffc0ba72d6f788f2bb3ef87d88471b7}} 
+\index{AlphiBoard@{AlphiBoard}!bar2@{bar2}}
+\index{bar2@{bar2}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{bar2}{bar2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_linear_address}{Linear\+Address}} Alphi\+Board\+::bar2}
+
+
+
+Memory descriptor for the B\+A\+R2 in user memory. 
+
+\mbox{\Hypertarget{class_alphi_board_a31c3d521b7bb2714be68de55b00ba01d}\label{class_alphi_board_a31c3d521b7bb2714be68de55b00ba01d}} 
+\index{AlphiBoard@{AlphiBoard}!cra@{cra}}
+\index{cra@{cra}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{cra}{cra}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pcie_cra}{Pcie\+Cra}}$\ast$ Alphi\+Board\+::cra}
+
+\mbox{\Hypertarget{class_alphi_board_a5e4cf06b870ccd1c6a8328d975f59da2}\label{class_alphi_board_a5e4cf06b870ccd1c6a8328d975f59da2}} 
+\index{AlphiBoard@{AlphiBoard}!libStatus@{libStatus}}
+\index{libStatus@{libStatus}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{libStatus}{libStatus}}
+{\footnotesize\ttfamily D\+W\+O\+RD Alphi\+Board\+::lib\+Status}
+
+\mbox{\Hypertarget{class_alphi_board_aad6bf4e0b1601a1315a6ad72e95fa276}\label{class_alphi_board_aad6bf4e0b1601a1315a6ad72e95fa276}} 
+\index{AlphiBoard@{AlphiBoard}!sysid@{sysid}}
+\index{sysid@{sysid}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{sysid}{sysid}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_board_version}{Board\+Version}}$\ast$ Alphi\+Board\+::sysid}
+
+
+
+Board identification. 
+
+\mbox{\Hypertarget{class_alphi_board_ae9864514fab56635b03bb5fd435aad6d}\label{class_alphi_board_ae9864514fab56635b03bb5fd435aad6d}} 
+\index{AlphiBoard@{AlphiBoard}!verbose@{verbose}}
+\index{verbose@{verbose}!AlphiBoard@{AlphiBoard}}
+\doxysubsubsection{\texorpdfstring{verbose}{verbose}}
+{\footnotesize\ttfamily int Alphi\+Board\+::verbose}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Alphi/\+P\+C\+Ie\+Mini\+Software/include/\mbox{\hyperlink{_alphi_board_8h}{Alphi\+Board.\+h}}\item 
+C\+:/\+Alphi/\+P\+C\+Ie\+Mini\+Software/\+P\+C\+Ie\+Mini\+\_\+lib/\mbox{\hyperlink{_alphi_board_8cpp}{Alphi\+Board.\+cpp}}\item 
+C\+:/\+Alphi/\+P\+C\+Ie\+Mini\+Software/\+P\+C\+Ie\+Mini\+\_\+lib/\mbox{\hyperlink{_alphi_board__irq_8cpp}{Alphi\+Board\+\_\+irq.\+cpp}}\end{DoxyCompactItemize}

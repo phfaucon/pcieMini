@@ -1,0 +1,66 @@
+\hypertarget{class_board_version}{}\doxysection{Board\+Version Class Reference}
+\label{class_board_version}\index{BoardVersion@{BoardVersion}}
+
+
+Board Hardware identification and version.  
+
+
+
+
+{\ttfamily \#include $<$Alphi\+Board.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_board_version_aff97bb898d00caed4a8e186ce86c07b9}{Board\+Version}} (volatile uint32\+\_\+t $\ast$addr)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_board_version_aa7bdadb4b36fd2ee11a60d5578831252}{get\+Version}} ()
+\begin{DoxyCompactList}\small\item\em Version, if there is one programmed on the board hardware. Typically 0. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{class_board_version_a8a981b8e022baf0b711e0aa9d9ec6ce0}{get\+Time\+Stamp}} ()
+\begin{DoxyCompactList}\small\item\em Date when the board firmware was compiled. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Board Hardware identification and version. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_board_version_aff97bb898d00caed4a8e186ce86c07b9}\label{class_board_version_aff97bb898d00caed4a8e186ce86c07b9}} 
+\index{BoardVersion@{BoardVersion}!BoardVersion@{BoardVersion}}
+\index{BoardVersion@{BoardVersion}!BoardVersion@{BoardVersion}}
+\doxysubsubsection{\texorpdfstring{BoardVersion()}{BoardVersion()}}
+{\footnotesize\ttfamily Board\+Version\+::\+Board\+Version (\begin{DoxyParamCaption}\item[{volatile uint32\+\_\+t $\ast$}]{addr }\end{DoxyParamCaption})}
+
+This constructor reads the chip register to initialize the data. It is called by the open and should not be called by the user. 
+\begin{DoxyParams}{Parameters}
+{\em addr} & Offset to the sysid controller in the B\+A\+R2 address space \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_board_version_a8a981b8e022baf0b711e0aa9d9ec6ce0}\label{class_board_version_a8a981b8e022baf0b711e0aa9d9ec6ce0}} 
+\index{BoardVersion@{BoardVersion}!getTimeStamp@{getTimeStamp}}
+\index{getTimeStamp@{getTimeStamp}!BoardVersion@{BoardVersion}}
+\doxysubsubsection{\texorpdfstring{getTimeStamp()}{getTimeStamp()}}
+{\footnotesize\ttfamily time\+\_\+t Board\+Version\+::get\+Time\+Stamp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Date when the board firmware was compiled. 
+
+\mbox{\Hypertarget{class_board_version_aa7bdadb4b36fd2ee11a60d5578831252}\label{class_board_version_aa7bdadb4b36fd2ee11a60d5578831252}} 
+\index{BoardVersion@{BoardVersion}!getVersion@{getVersion}}
+\index{getVersion@{getVersion}!BoardVersion@{BoardVersion}}
+\doxysubsubsection{\texorpdfstring{getVersion()}{getVersion()}}
+{\footnotesize\ttfamily uint32\+\_\+t Board\+Version\+::get\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Version, if there is one programmed on the board hardware. Typically 0. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Alphi/\+P\+C\+Ie\+Mini\+Software/include/\mbox{\hyperlink{_alphi_board_8h}{Alphi\+Board.\+h}}\item 
+C\+:/\+Alphi/\+P\+C\+Ie\+Mini\+Software/\+P\+C\+Ie\+Mini\+\_\+lib/\mbox{\hyperlink{_alphi_board_8cpp}{Alphi\+Board.\+cpp}}\end{DoxyCompactItemize}

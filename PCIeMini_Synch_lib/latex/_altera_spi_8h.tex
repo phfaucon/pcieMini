@@ -1,0 +1,238 @@
+\hypertarget{_altera_spi_8h}{}\doxysection{C\+:/\+Alphi/\+P\+C\+Ie\+Mini\+Software/include/\+Altera\+Spi.h File Reference}
+\label{_altera_spi_8h}\index{C:/Alphi/PCIeMiniSoftware/include/AlteraSpi.h@{C:/Alphi/PCIeMiniSoftware/include/AlteraSpi.h}}
+
+
+Description of the low-\/level access routines to the S\+PI.  
+
+
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Alphi\+Dll.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_altera_spi}{Altera\+Spi}}
+\begin{DoxyCompactList}\small\item\em Low level S\+PI interface to the S\+PI hardware. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_a2366d9321c4c0577e1ff312b60961379}{A\+L\+T\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+M\+E\+R\+GE}}~(0x01)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_abebce7e895c1ea4b38972a07e0f3cb10}{A\+L\+T\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+T\+O\+G\+G\+L\+E\+\_\+\+S\+S\+\_\+N}}~(0x02)
+\begin{DoxyCompactList}\small\item\em option\+: toggle the SS line between words \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_a2c3bca651683980f90256547a776efa3}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+O\+E\+\_\+\+M\+SK}}~(0x8)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_a94ce5ae40e426edb01df9d0550567ee0}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+O\+E\+\_\+\+O\+F\+ST}}~(3)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_afba579dfe96911cf7d14cd9dd4aa428e}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+O\+E\+\_\+\+M\+SK}}~(0x10)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_a2fdcfb23ec9c5110953e2ea092840843}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+O\+E\+\_\+\+O\+F\+ST}}~(4)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_ae572a4a0ff83b58af4672b375a821106}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+M\+T\+\_\+\+M\+SK}}~(0x20)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_aa88a4f4b597a2ea041fa982b2f132322}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+M\+T\+\_\+\+O\+F\+ST}}~(5)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_a513c19031f95e78503530dba939ba5ba}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+R\+D\+Y\+\_\+\+M\+SK}}~(0x40)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_a53d173167e2ee1e72a83d9e858832121}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+R\+D\+Y\+\_\+\+O\+F\+ST}}~(6)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_ae5357f2a017b9ff47f8adda1907bd929}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+R\+D\+Y\+\_\+\+M\+SK}}~(0x80)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_a05fc47201a65c81033f566783139b8be}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+R\+D\+Y\+\_\+\+O\+F\+ST}}~(7)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_a18cc78baad6c0b957d49d73ff06c1402}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+E\+\_\+\+M\+SK}}~(0x100)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_abf7e0be0da07b97873fbbd43acdfa920}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+E\+\_\+\+O\+F\+ST}}~(8)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_a58013551c660191da7c6dca8c97dcd61}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+R\+O\+E\+\_\+\+M\+SK}}~(0x8)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_a65db04bebe72e8f7e242adc24a87a02b}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+R\+O\+E\+\_\+\+O\+F\+ST}}~(3)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_a354265eb8d0141e190cf8c0fc81ccd17}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+T\+O\+E\+\_\+\+M\+SK}}~(0x10)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_ab7a1ce3cd2f15b0eb881927097327488}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+T\+O\+E\+\_\+\+O\+F\+ST}}~(4)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_a8d319e3bb8a080b23f2517933d25bd06}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+T\+R\+D\+Y\+\_\+\+M\+SK}}~(0x40)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_a1a8a1ac07226bf419f2c864cb737715f}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+T\+R\+D\+Y\+\_\+\+O\+FS}}~(6)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_a95217db318fe80dd7c3734829078df1d}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+R\+R\+D\+Y\+\_\+\+M\+SK}}~(0x80)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_ade128961cf4f32df85f487a6a78d5008}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+R\+R\+D\+Y\+\_\+\+O\+FS}}~(7)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_a77f1f585eb7d0af27b7d97901e254a8d}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+E\+\_\+\+M\+SK}}~(0x100)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_a4dd8d94e5ee725e006b56428ea40a2db}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+E\+\_\+\+O\+F\+ST}}~(8)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_a4dde14125b2779310fea2d923cd3a336}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+S\+O\+\_\+\+M\+SK}}~(0x400)
+\item 
+\#define \mbox{\hyperlink{_altera_spi_8h_ab62c2685b94e32c09925a712e6c37267}{A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+S\+O\+\_\+\+O\+F\+ST}}~(10)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Description of the low-\/level access routines to the S\+PI. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_altera_spi_8h_a2366d9321c4c0577e1ff312b60961379}\label{_altera_spi_8h_a2366d9321c4c0577e1ff312b60961379}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALT\_AVALON\_SPI\_COMMAND\_MERGE@{ALT\_AVALON\_SPI\_COMMAND\_MERGE}}
+\index{ALT\_AVALON\_SPI\_COMMAND\_MERGE@{ALT\_AVALON\_SPI\_COMMAND\_MERGE}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALT\_AVALON\_SPI\_COMMAND\_MERGE}{ALT\_AVALON\_SPI\_COMMAND\_MERGE}}
+{\footnotesize\ttfamily \#define A\+L\+T\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+M\+E\+R\+GE~(0x01)}
+
+\mbox{\Hypertarget{_altera_spi_8h_abebce7e895c1ea4b38972a07e0f3cb10}\label{_altera_spi_8h_abebce7e895c1ea4b38972a07e0f3cb10}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALT\_AVALON\_SPI\_COMMAND\_TOGGLE\_SS\_N@{ALT\_AVALON\_SPI\_COMMAND\_TOGGLE\_SS\_N}}
+\index{ALT\_AVALON\_SPI\_COMMAND\_TOGGLE\_SS\_N@{ALT\_AVALON\_SPI\_COMMAND\_TOGGLE\_SS\_N}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALT\_AVALON\_SPI\_COMMAND\_TOGGLE\_SS\_N}{ALT\_AVALON\_SPI\_COMMAND\_TOGGLE\_SS\_N}}
+{\footnotesize\ttfamily \#define A\+L\+T\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+T\+O\+G\+G\+L\+E\+\_\+\+S\+S\+\_\+N~(0x02)}
+
+
+
+option\+: toggle the SS line between words 
+
+If you need the slave select line to be toggled between words then you should set the toggle bit in the flag. \mbox{\Hypertarget{_altera_spi_8h_a77f1f585eb7d0af27b7d97901e254a8d}\label{_altera_spi_8h_a77f1f585eb7d0af27b7d97901e254a8d}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_CONTROL\_IE\_MSK@{ALTERA\_AVALON\_SPI\_CONTROL\_IE\_MSK}}
+\index{ALTERA\_AVALON\_SPI\_CONTROL\_IE\_MSK@{ALTERA\_AVALON\_SPI\_CONTROL\_IE\_MSK}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_CONTROL\_IE\_MSK}{ALTERA\_AVALON\_SPI\_CONTROL\_IE\_MSK}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+E\+\_\+\+M\+SK~(0x100)}
+
+\mbox{\Hypertarget{_altera_spi_8h_a4dd8d94e5ee725e006b56428ea40a2db}\label{_altera_spi_8h_a4dd8d94e5ee725e006b56428ea40a2db}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_CONTROL\_IE\_OFST@{ALTERA\_AVALON\_SPI\_CONTROL\_IE\_OFST}}
+\index{ALTERA\_AVALON\_SPI\_CONTROL\_IE\_OFST@{ALTERA\_AVALON\_SPI\_CONTROL\_IE\_OFST}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_CONTROL\_IE\_OFST}{ALTERA\_AVALON\_SPI\_CONTROL\_IE\_OFST}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+E\+\_\+\+O\+F\+ST~(8)}
+
+\mbox{\Hypertarget{_altera_spi_8h_a58013551c660191da7c6dca8c97dcd61}\label{_altera_spi_8h_a58013551c660191da7c6dca8c97dcd61}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_CONTROL\_IROE\_MSK@{ALTERA\_AVALON\_SPI\_CONTROL\_IROE\_MSK}}
+\index{ALTERA\_AVALON\_SPI\_CONTROL\_IROE\_MSK@{ALTERA\_AVALON\_SPI\_CONTROL\_IROE\_MSK}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_CONTROL\_IROE\_MSK}{ALTERA\_AVALON\_SPI\_CONTROL\_IROE\_MSK}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+R\+O\+E\+\_\+\+M\+SK~(0x8)}
+
+\mbox{\Hypertarget{_altera_spi_8h_a65db04bebe72e8f7e242adc24a87a02b}\label{_altera_spi_8h_a65db04bebe72e8f7e242adc24a87a02b}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_CONTROL\_IROE\_OFST@{ALTERA\_AVALON\_SPI\_CONTROL\_IROE\_OFST}}
+\index{ALTERA\_AVALON\_SPI\_CONTROL\_IROE\_OFST@{ALTERA\_AVALON\_SPI\_CONTROL\_IROE\_OFST}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_CONTROL\_IROE\_OFST}{ALTERA\_AVALON\_SPI\_CONTROL\_IROE\_OFST}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+R\+O\+E\+\_\+\+O\+F\+ST~(3)}
+
+\mbox{\Hypertarget{_altera_spi_8h_a95217db318fe80dd7c3734829078df1d}\label{_altera_spi_8h_a95217db318fe80dd7c3734829078df1d}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_CONTROL\_IRRDY\_MSK@{ALTERA\_AVALON\_SPI\_CONTROL\_IRRDY\_MSK}}
+\index{ALTERA\_AVALON\_SPI\_CONTROL\_IRRDY\_MSK@{ALTERA\_AVALON\_SPI\_CONTROL\_IRRDY\_MSK}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_CONTROL\_IRRDY\_MSK}{ALTERA\_AVALON\_SPI\_CONTROL\_IRRDY\_MSK}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+R\+R\+D\+Y\+\_\+\+M\+SK~(0x80)}
+
+\mbox{\Hypertarget{_altera_spi_8h_ade128961cf4f32df85f487a6a78d5008}\label{_altera_spi_8h_ade128961cf4f32df85f487a6a78d5008}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_CONTROL\_IRRDY\_OFS@{ALTERA\_AVALON\_SPI\_CONTROL\_IRRDY\_OFS}}
+\index{ALTERA\_AVALON\_SPI\_CONTROL\_IRRDY\_OFS@{ALTERA\_AVALON\_SPI\_CONTROL\_IRRDY\_OFS}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_CONTROL\_IRRDY\_OFS}{ALTERA\_AVALON\_SPI\_CONTROL\_IRRDY\_OFS}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+R\+R\+D\+Y\+\_\+\+O\+FS~(7)}
+
+\mbox{\Hypertarget{_altera_spi_8h_a354265eb8d0141e190cf8c0fc81ccd17}\label{_altera_spi_8h_a354265eb8d0141e190cf8c0fc81ccd17}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_CONTROL\_ITOE\_MSK@{ALTERA\_AVALON\_SPI\_CONTROL\_ITOE\_MSK}}
+\index{ALTERA\_AVALON\_SPI\_CONTROL\_ITOE\_MSK@{ALTERA\_AVALON\_SPI\_CONTROL\_ITOE\_MSK}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_CONTROL\_ITOE\_MSK}{ALTERA\_AVALON\_SPI\_CONTROL\_ITOE\_MSK}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+T\+O\+E\+\_\+\+M\+SK~(0x10)}
+
+\mbox{\Hypertarget{_altera_spi_8h_ab7a1ce3cd2f15b0eb881927097327488}\label{_altera_spi_8h_ab7a1ce3cd2f15b0eb881927097327488}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_CONTROL\_ITOE\_OFST@{ALTERA\_AVALON\_SPI\_CONTROL\_ITOE\_OFST}}
+\index{ALTERA\_AVALON\_SPI\_CONTROL\_ITOE\_OFST@{ALTERA\_AVALON\_SPI\_CONTROL\_ITOE\_OFST}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_CONTROL\_ITOE\_OFST}{ALTERA\_AVALON\_SPI\_CONTROL\_ITOE\_OFST}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+T\+O\+E\+\_\+\+O\+F\+ST~(4)}
+
+\mbox{\Hypertarget{_altera_spi_8h_a8d319e3bb8a080b23f2517933d25bd06}\label{_altera_spi_8h_a8d319e3bb8a080b23f2517933d25bd06}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_CONTROL\_ITRDY\_MSK@{ALTERA\_AVALON\_SPI\_CONTROL\_ITRDY\_MSK}}
+\index{ALTERA\_AVALON\_SPI\_CONTROL\_ITRDY\_MSK@{ALTERA\_AVALON\_SPI\_CONTROL\_ITRDY\_MSK}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_CONTROL\_ITRDY\_MSK}{ALTERA\_AVALON\_SPI\_CONTROL\_ITRDY\_MSK}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+T\+R\+D\+Y\+\_\+\+M\+SK~(0x40)}
+
+\mbox{\Hypertarget{_altera_spi_8h_a1a8a1ac07226bf419f2c864cb737715f}\label{_altera_spi_8h_a1a8a1ac07226bf419f2c864cb737715f}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_CONTROL\_ITRDY\_OFS@{ALTERA\_AVALON\_SPI\_CONTROL\_ITRDY\_OFS}}
+\index{ALTERA\_AVALON\_SPI\_CONTROL\_ITRDY\_OFS@{ALTERA\_AVALON\_SPI\_CONTROL\_ITRDY\_OFS}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_CONTROL\_ITRDY\_OFS}{ALTERA\_AVALON\_SPI\_CONTROL\_ITRDY\_OFS}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+T\+R\+D\+Y\+\_\+\+O\+FS~(6)}
+
+\mbox{\Hypertarget{_altera_spi_8h_a4dde14125b2779310fea2d923cd3a336}\label{_altera_spi_8h_a4dde14125b2779310fea2d923cd3a336}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_CONTROL\_SSO\_MSK@{ALTERA\_AVALON\_SPI\_CONTROL\_SSO\_MSK}}
+\index{ALTERA\_AVALON\_SPI\_CONTROL\_SSO\_MSK@{ALTERA\_AVALON\_SPI\_CONTROL\_SSO\_MSK}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_CONTROL\_SSO\_MSK}{ALTERA\_AVALON\_SPI\_CONTROL\_SSO\_MSK}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+S\+O\+\_\+\+M\+SK~(0x400)}
+
+\mbox{\Hypertarget{_altera_spi_8h_ab62c2685b94e32c09925a712e6c37267}\label{_altera_spi_8h_ab62c2685b94e32c09925a712e6c37267}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_CONTROL\_SSO\_OFST@{ALTERA\_AVALON\_SPI\_CONTROL\_SSO\_OFST}}
+\index{ALTERA\_AVALON\_SPI\_CONTROL\_SSO\_OFST@{ALTERA\_AVALON\_SPI\_CONTROL\_SSO\_OFST}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_CONTROL\_SSO\_OFST}{ALTERA\_AVALON\_SPI\_CONTROL\_SSO\_OFST}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+S\+O\+\_\+\+O\+F\+ST~(10)}
+
+\mbox{\Hypertarget{_altera_spi_8h_a18cc78baad6c0b957d49d73ff06c1402}\label{_altera_spi_8h_a18cc78baad6c0b957d49d73ff06c1402}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_STATUS\_E\_MSK@{ALTERA\_AVALON\_SPI\_STATUS\_E\_MSK}}
+\index{ALTERA\_AVALON\_SPI\_STATUS\_E\_MSK@{ALTERA\_AVALON\_SPI\_STATUS\_E\_MSK}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_STATUS\_E\_MSK}{ALTERA\_AVALON\_SPI\_STATUS\_E\_MSK}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+E\+\_\+\+M\+SK~(0x100)}
+
+\mbox{\Hypertarget{_altera_spi_8h_abf7e0be0da07b97873fbbd43acdfa920}\label{_altera_spi_8h_abf7e0be0da07b97873fbbd43acdfa920}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_STATUS\_E\_OFST@{ALTERA\_AVALON\_SPI\_STATUS\_E\_OFST}}
+\index{ALTERA\_AVALON\_SPI\_STATUS\_E\_OFST@{ALTERA\_AVALON\_SPI\_STATUS\_E\_OFST}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_STATUS\_E\_OFST}{ALTERA\_AVALON\_SPI\_STATUS\_E\_OFST}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+E\+\_\+\+O\+F\+ST~(8)}
+
+\mbox{\Hypertarget{_altera_spi_8h_a2c3bca651683980f90256547a776efa3}\label{_altera_spi_8h_a2c3bca651683980f90256547a776efa3}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_STATUS\_ROE\_MSK@{ALTERA\_AVALON\_SPI\_STATUS\_ROE\_MSK}}
+\index{ALTERA\_AVALON\_SPI\_STATUS\_ROE\_MSK@{ALTERA\_AVALON\_SPI\_STATUS\_ROE\_MSK}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_STATUS\_ROE\_MSK}{ALTERA\_AVALON\_SPI\_STATUS\_ROE\_MSK}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+O\+E\+\_\+\+M\+SK~(0x8)}
+
+\mbox{\Hypertarget{_altera_spi_8h_a94ce5ae40e426edb01df9d0550567ee0}\label{_altera_spi_8h_a94ce5ae40e426edb01df9d0550567ee0}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_STATUS\_ROE\_OFST@{ALTERA\_AVALON\_SPI\_STATUS\_ROE\_OFST}}
+\index{ALTERA\_AVALON\_SPI\_STATUS\_ROE\_OFST@{ALTERA\_AVALON\_SPI\_STATUS\_ROE\_OFST}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_STATUS\_ROE\_OFST}{ALTERA\_AVALON\_SPI\_STATUS\_ROE\_OFST}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+O\+E\+\_\+\+O\+F\+ST~(3)}
+
+\mbox{\Hypertarget{_altera_spi_8h_ae5357f2a017b9ff47f8adda1907bd929}\label{_altera_spi_8h_ae5357f2a017b9ff47f8adda1907bd929}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_STATUS\_RRDY\_MSK@{ALTERA\_AVALON\_SPI\_STATUS\_RRDY\_MSK}}
+\index{ALTERA\_AVALON\_SPI\_STATUS\_RRDY\_MSK@{ALTERA\_AVALON\_SPI\_STATUS\_RRDY\_MSK}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_STATUS\_RRDY\_MSK}{ALTERA\_AVALON\_SPI\_STATUS\_RRDY\_MSK}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+R\+D\+Y\+\_\+\+M\+SK~(0x80)}
+
+\mbox{\Hypertarget{_altera_spi_8h_a05fc47201a65c81033f566783139b8be}\label{_altera_spi_8h_a05fc47201a65c81033f566783139b8be}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_STATUS\_RRDY\_OFST@{ALTERA\_AVALON\_SPI\_STATUS\_RRDY\_OFST}}
+\index{ALTERA\_AVALON\_SPI\_STATUS\_RRDY\_OFST@{ALTERA\_AVALON\_SPI\_STATUS\_RRDY\_OFST}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_STATUS\_RRDY\_OFST}{ALTERA\_AVALON\_SPI\_STATUS\_RRDY\_OFST}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+R\+D\+Y\+\_\+\+O\+F\+ST~(7)}
+
+\mbox{\Hypertarget{_altera_spi_8h_ae572a4a0ff83b58af4672b375a821106}\label{_altera_spi_8h_ae572a4a0ff83b58af4672b375a821106}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_STATUS\_TMT\_MSK@{ALTERA\_AVALON\_SPI\_STATUS\_TMT\_MSK}}
+\index{ALTERA\_AVALON\_SPI\_STATUS\_TMT\_MSK@{ALTERA\_AVALON\_SPI\_STATUS\_TMT\_MSK}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_STATUS\_TMT\_MSK}{ALTERA\_AVALON\_SPI\_STATUS\_TMT\_MSK}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+M\+T\+\_\+\+M\+SK~(0x20)}
+
+\mbox{\Hypertarget{_altera_spi_8h_aa88a4f4b597a2ea041fa982b2f132322}\label{_altera_spi_8h_aa88a4f4b597a2ea041fa982b2f132322}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_STATUS\_TMT\_OFST@{ALTERA\_AVALON\_SPI\_STATUS\_TMT\_OFST}}
+\index{ALTERA\_AVALON\_SPI\_STATUS\_TMT\_OFST@{ALTERA\_AVALON\_SPI\_STATUS\_TMT\_OFST}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_STATUS\_TMT\_OFST}{ALTERA\_AVALON\_SPI\_STATUS\_TMT\_OFST}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+M\+T\+\_\+\+O\+F\+ST~(5)}
+
+\mbox{\Hypertarget{_altera_spi_8h_afba579dfe96911cf7d14cd9dd4aa428e}\label{_altera_spi_8h_afba579dfe96911cf7d14cd9dd4aa428e}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_STATUS\_TOE\_MSK@{ALTERA\_AVALON\_SPI\_STATUS\_TOE\_MSK}}
+\index{ALTERA\_AVALON\_SPI\_STATUS\_TOE\_MSK@{ALTERA\_AVALON\_SPI\_STATUS\_TOE\_MSK}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_STATUS\_TOE\_MSK}{ALTERA\_AVALON\_SPI\_STATUS\_TOE\_MSK}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+O\+E\+\_\+\+M\+SK~(0x10)}
+
+\mbox{\Hypertarget{_altera_spi_8h_a2fdcfb23ec9c5110953e2ea092840843}\label{_altera_spi_8h_a2fdcfb23ec9c5110953e2ea092840843}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_STATUS\_TOE\_OFST@{ALTERA\_AVALON\_SPI\_STATUS\_TOE\_OFST}}
+\index{ALTERA\_AVALON\_SPI\_STATUS\_TOE\_OFST@{ALTERA\_AVALON\_SPI\_STATUS\_TOE\_OFST}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_STATUS\_TOE\_OFST}{ALTERA\_AVALON\_SPI\_STATUS\_TOE\_OFST}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+O\+E\+\_\+\+O\+F\+ST~(4)}
+
+\mbox{\Hypertarget{_altera_spi_8h_a513c19031f95e78503530dba939ba5ba}\label{_altera_spi_8h_a513c19031f95e78503530dba939ba5ba}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_STATUS\_TRDY\_MSK@{ALTERA\_AVALON\_SPI\_STATUS\_TRDY\_MSK}}
+\index{ALTERA\_AVALON\_SPI\_STATUS\_TRDY\_MSK@{ALTERA\_AVALON\_SPI\_STATUS\_TRDY\_MSK}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_STATUS\_TRDY\_MSK}{ALTERA\_AVALON\_SPI\_STATUS\_TRDY\_MSK}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+R\+D\+Y\+\_\+\+M\+SK~(0x40)}
+
+\mbox{\Hypertarget{_altera_spi_8h_a53d173167e2ee1e72a83d9e858832121}\label{_altera_spi_8h_a53d173167e2ee1e72a83d9e858832121}} 
+\index{AlteraSpi.h@{AlteraSpi.h}!ALTERA\_AVALON\_SPI\_STATUS\_TRDY\_OFST@{ALTERA\_AVALON\_SPI\_STATUS\_TRDY\_OFST}}
+\index{ALTERA\_AVALON\_SPI\_STATUS\_TRDY\_OFST@{ALTERA\_AVALON\_SPI\_STATUS\_TRDY\_OFST}!AlteraSpi.h@{AlteraSpi.h}}
+\doxysubsubsection{\texorpdfstring{ALTERA\_AVALON\_SPI\_STATUS\_TRDY\_OFST}{ALTERA\_AVALON\_SPI\_STATUS\_TRDY\_OFST}}
+{\footnotesize\ttfamily \#define A\+L\+T\+E\+R\+A\+\_\+\+A\+V\+A\+L\+O\+N\+\_\+\+S\+P\+I\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+R\+D\+Y\+\_\+\+O\+F\+ST~(6)}
+

@@ -1,0 +1,78 @@
+\hypertarget{class_pcie_cra}{}\doxysection{Pcie\+Cra Class Reference}
+\label{class_pcie_cra}\index{PcieCra@{PcieCra}}
+
+
+P\+C\+Ie controller class.  
+
+
+
+
+{\ttfamily \#include $<$Alphi\+Board.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pcie_cra_a61122428d2a4b2cb6e20a3153394d200}{Pcie\+Cra}} (volatile void $\ast$cra\+\_\+addr)
+\item 
+void \mbox{\hyperlink{class_pcie_cra_a5a9a379b59b519a163e241e4beb0fb7b}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the C\+RA P\+C\+Ie interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+volatile uint32\+\_\+t $\ast$ \mbox{\hyperlink{class_pcie_cra_a63c2c6a81ef14028cc0c010b9dcbb758}{pcie\+Irq\+Status}}
+\begin{DoxyCompactList}\small\item\em P\+C\+Ie interface interrupt status. \end{DoxyCompactList}\item 
+volatile uint32\+\_\+t $\ast$ \mbox{\hyperlink{class_pcie_cra_ae9f36b81ae64607b9747aace70cc5f33}{pcie\+Irq\+Enable}}
+\begin{DoxyCompactList}\small\item\em P\+C\+Ie interface interrupt enable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+P\+C\+Ie controller class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pcie_cra_a61122428d2a4b2cb6e20a3153394d200}\label{class_pcie_cra_a61122428d2a4b2cb6e20a3153394d200}} 
+\index{PcieCra@{PcieCra}!PcieCra@{PcieCra}}
+\index{PcieCra@{PcieCra}!PcieCra@{PcieCra}}
+\doxysubsubsection{\texorpdfstring{PcieCra()}{PcieCra()}}
+{\footnotesize\ttfamily Pcie\+Cra\+::\+Pcie\+Cra (\begin{DoxyParamCaption}\item[{volatile void $\ast$}]{cra\+\_\+addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pcie_cra_a5a9a379b59b519a163e241e4beb0fb7b}\label{class_pcie_cra_a5a9a379b59b519a163e241e4beb0fb7b}} 
+\index{PcieCra@{PcieCra}!reset@{reset}}
+\index{reset@{reset}!PcieCra@{PcieCra}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Pcie\+Cra\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset the C\+RA P\+C\+Ie interface. 
+
+Disable interrupts. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_pcie_cra_ae9f36b81ae64607b9747aace70cc5f33}\label{class_pcie_cra_ae9f36b81ae64607b9747aace70cc5f33}} 
+\index{PcieCra@{PcieCra}!pcieIrqEnable@{pcieIrqEnable}}
+\index{pcieIrqEnable@{pcieIrqEnable}!PcieCra@{PcieCra}}
+\doxysubsubsection{\texorpdfstring{pcieIrqEnable}{pcieIrqEnable}}
+{\footnotesize\ttfamily volatile uint32\+\_\+t$\ast$ Pcie\+Cra\+::pcie\+Irq\+Enable}
+
+
+
+P\+C\+Ie interface interrupt enable. 
+
+\mbox{\Hypertarget{class_pcie_cra_a63c2c6a81ef14028cc0c010b9dcbb758}\label{class_pcie_cra_a63c2c6a81ef14028cc0c010b9dcbb758}} 
+\index{PcieCra@{PcieCra}!pcieIrqStatus@{pcieIrqStatus}}
+\index{pcieIrqStatus@{pcieIrqStatus}!PcieCra@{PcieCra}}
+\doxysubsubsection{\texorpdfstring{pcieIrqStatus}{pcieIrqStatus}}
+{\footnotesize\ttfamily volatile uint32\+\_\+t$\ast$ Pcie\+Cra\+::pcie\+Irq\+Status}
+
+
+
+P\+C\+Ie interface interrupt status. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Alphi/\+P\+C\+Ie\+Mini\+Software/include/\mbox{\hyperlink{_alphi_board_8h}{Alphi\+Board.\+h}}\end{DoxyCompactItemize}

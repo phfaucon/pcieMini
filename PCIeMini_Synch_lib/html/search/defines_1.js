@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['alphi_5fs_5fok_383',['ALPHI_S_OK',['../_alphi_dll_8h.html#ae109ada0699ce828edec340e7f3204e4',1,'AlphiDll.h']]],
+  ['alt_5favalon_5fspi_5fcommand_5fmerge_384',['ALT_AVALON_SPI_COMMAND_MERGE',['../_altera_spi_8h.html#a2366d9321c4c0577e1ff312b60961379',1,'AlteraSpi.h']]],
+  ['alt_5favalon_5fspi_5fcommand_5ftoggle_5fss_5fn_385',['ALT_AVALON_SPI_COMMAND_TOGGLE_SS_N',['../_altera_spi_8h.html#abebce7e895c1ea4b38972a07e0f3cb10',1,'AlteraSpi.h']]],
+  ['altera_5favalon_5fspi_5fcontrol_5fie_5fmsk_386',['ALTERA_AVALON_SPI_CONTROL_IE_MSK',['../_altera_spi_8h.html#a77f1f585eb7d0af27b7d97901e254a8d',1,'AlteraSpi.h']]],
+  ['altera_5favalon_5fspi_5fcontrol_5fie_5fofst_387',['ALTERA_AVALON_SPI_CONTROL_IE_OFST',['../_altera_spi_8h.html#a4dd8d94e5ee725e006b56428ea40a2db',1,'AlteraSpi.h']]],
+  ['altera_5favalon_5fspi_5fcontrol_5firoe_5fmsk_388',['ALTERA_AVALON_SPI_CONTROL_IROE_MSK',['../_altera_spi_8h.html#a58013551c660191da7c6dca8c97dcd61',1,'AlteraSpi.h']]],
+  ['altera_5favalon_5fspi_5fcontrol_5firoe_5fofst_389',['ALTERA_AVALON_SPI_CONTROL_IROE_OFST',['../_altera_spi_8h.html#a65db04bebe72e8f7e242adc24a87a02b',1,'AlteraSpi.h']]],
+  ['altera_5favalon_5fspi_5fcontrol_5firrdy_5fmsk_390',['ALTERA_AVALON_SPI_CONTROL_IRRDY_MSK',['../_altera_spi_8h.html#a95217db318fe80dd7c3734829078df1d',1,'AlteraSpi.h']]],
+  ['altera_5favalon_5fspi_5fcontrol_5firrdy_5fofs_391',['ALTERA_AVALON_SPI_CONTROL_IRRDY_OFS',['../_altera_spi_8h.html#ade128961cf4f32df85f487a6a78d5008',1,'AlteraSpi.h']]],
+  ['altera_5favalon_5fspi_5fcontrol_5fitoe_5fmsk_392',['ALTERA_AVALON_SPI_CONTROL_ITOE_MSK',['../_altera_spi_8h.html#a354265eb8d0141e190cf8c0fc81ccd17',1,'AlteraSpi.h']]],
+  ['altera_5favalon_5fspi_5fcontrol_5fitoe_5fofst_393',['ALTERA_AVALON_SPI_CONTROL_ITOE_OFST',['../_altera_spi_8h.html#ab7a1ce3cd2f15b0eb881927097327488',1,'AlteraSpi.h']]],
+  ['altera_5favalon_5fspi_5fcontrol_5fitrdy_5fmsk_394',['ALTERA_AVALON_SPI_CONTROL_ITRDY_MSK',['../_altera_spi_8h.html#a8d319e3bb8a080b23f2517933d25bd06',1,'AlteraSpi.h']]],
+  ['altera_5favalon_5fspi_5fcontrol_5fitrdy_5fofs_395',['ALTERA_AVALON_SPI_CONTROL_ITRDY_OFS',['../_altera_spi_8h.html#a1a8a1ac07226bf419f2c864cb737715f',1,'AlteraSpi.h']]],
+  ['altera_5favalon_5fspi_5fcontrol_5fsso_5fmsk_396',['ALTERA_AVALON_SPI_CONTROL_SSO_MSK',['../_altera_spi_8h.html#a4dde14125b2779310fea2d923cd3a336',1,'AlteraSpi.h']]],
+  ['altera_5favalon_5fspi_5fcontrol_5fsso_5fofst_397',['ALTERA_AVALON_SPI_CONTROL_SSO_OFST',['../_altera_spi_8h.html#ab62c2685b94e32c09925a712e6c37267',1,'AlteraSpi.h']]],
+  ['altera_5favalon_5fspi_5fstatus_5fe_5fmsk_398',['ALTERA_AVALON_SPI_STATUS_E_MSK',['../_altera_spi_8h.html#a18cc78baad6c0b957d49d73ff06c1402',1,'AlteraSpi.h']]],
+  ['altera_5favalon_5fspi_5fstatus_5fe_5fofst_399',['ALTERA_AVALON_SPI_STATUS_E_OFST',['../_altera_spi_8h.html#abf7e0be0da07b97873fbbd43acdfa920',1,'AlteraSpi.h']]]
+];

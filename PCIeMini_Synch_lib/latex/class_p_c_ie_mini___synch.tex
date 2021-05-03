@@ -1,0 +1,208 @@
+\hypertarget{class_p_c_ie_mini___synch}{}\doxysection{P\+C\+Ie\+Mini\+\_\+\+Synch Class Reference}
+\label{class_p_c_ie_mini___synch}\index{PCIeMini\_Synch@{PCIeMini\_Synch}}
+
+
+P\+C\+Ie\+Mini\+\_\+\+Synchro controller board object.  
+
+
+
+
+{\ttfamily \#include $<$P\+C\+Ie\+Mini\+\_\+\+Synch.\+h$>$}
+
+Inheritance diagram for P\+C\+Ie\+Mini\+\_\+\+Synch\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_c_ie_mini___synch}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_c_ie_mini___synch_a7d1f688069e3aad7f73d1ea71a3b8e70}{P\+C\+Ie\+Mini\+\_\+\+Synch}} ()
+\item 
+\mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} \mbox{\hyperlink{class_p_c_ie_mini___synch_acc3e4cce16189f8d077437bca6f57866}{open}} (int brd\+Nbr)
+\begin{DoxyCompactList}\small\item\em Open\+: connect to an actual board. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} \mbox{\hyperlink{class_p_c_ie_mini___synch_af9c0e2131928b60d50f92e08830b1124}{close}} ()
+\begin{DoxyCompactList}\small\item\em Close the connection to a board object and free the resources. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} \mbox{\hyperlink{class_p_c_ie_mini___synch_a8707c1d2ce57b7fd5172c362a1ae9014}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the board controllers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_p_c_ie_mini___synch_aba5fc7d93c5e8e238d0bfafbaf815a37}{set\+Led\+Pio}} (uint32\+\_\+t)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_p_c_ie_mini___synch_a2aac2c6b1695114ee4c74264b76295cd}{get\+Led\+Pio}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static char $\ast$ \mbox{\hyperlink{class_p_c_ie_mini___synch_aa6fcfa1b36c185d2df53d7e329e3a25f}{get\+Error\+Msg}} (\mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} error\+Nbr)
+\begin{DoxyCompactList}\small\item\em Return a text description corresponding to an error code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+volatile uint32\+\_\+t $\ast$ \mbox{\hyperlink{class_p_c_ie_mini___synch_a6b60efc5e1937867a256e6490d139555}{led\+Pio}}
+\begin{DoxyCompactList}\small\item\em L\+ED control. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_control_register}{Control\+Register}} $\ast$ \mbox{\hyperlink{class_p_c_ie_mini___synch_a229ff47322835a8b14dca049d53eea7f}{control\+Register}}
+\begin{DoxyCompactList}\small\item\em Interface to the board control register. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_status_register}{Status\+Register}} $\ast$ \mbox{\hyperlink{class_p_c_ie_mini___synch_ab94eb2c37870fd3eaefcb5704963d75c}{status\+Register}}
+\begin{DoxyCompactList}\small\item\em Interface to the board status register. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ltc2754__av}{Ltc2754\+\_\+av}} $\ast$ \mbox{\hyperlink{class_p_c_ie_mini___synch_ad61900604586a4ec234643bbd76911de}{da}}
+\begin{DoxyCompactList}\small\item\em Interface to the D\+As when used as synchro simulator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rd19231}{Rd19231}} $\ast$ \mbox{\hyperlink{class_p_c_ie_mini___synch_a8a6f9e90649eea0eca96050c42b6a5fc}{sync}}
+\begin{DoxyCompactList}\small\item\em Interface to the R\+D19231 Synchro resolver. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ltc2754___s_p_i}{Ltc2754\+\_\+\+S\+PI}} $\ast$ \mbox{\hyperlink{class_p_c_ie_mini___synch_a2e7b813aaaf7ac44f6a40050f07b351c}{spi\+\_\+da}}
+\begin{DoxyCompactList}\small\item\em S\+PI controller used by the D\+As as general purpose D\+As. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+P\+C\+Ie\+Mini\+\_\+\+Synchro controller board object. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_c_ie_mini___synch_a7d1f688069e3aad7f73d1ea71a3b8e70}\label{class_p_c_ie_mini___synch_a7d1f688069e3aad7f73d1ea71a3b8e70}} 
+\index{PCIeMini\_Synch@{PCIeMini\_Synch}!PCIeMini\_Synch@{PCIeMini\_Synch}}
+\index{PCIeMini\_Synch@{PCIeMini\_Synch}!PCIeMini\_Synch@{PCIeMini\_Synch}}
+\doxysubsubsection{\texorpdfstring{PCIeMini\_Synch()}{PCIeMini\_Synch()}}
+{\footnotesize\ttfamily P\+C\+Ie\+Mini\+\_\+\+Synch\+::\+P\+C\+Ie\+Mini\+\_\+\+Synch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The constructor does not take any parameter. The board is not actually usable until the open method connects it to real hardware. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_c_ie_mini___synch_af9c0e2131928b60d50f92e08830b1124}\label{class_p_c_ie_mini___synch_af9c0e2131928b60d50f92e08830b1124}} 
+\index{PCIeMini\_Synch@{PCIeMini\_Synch}!close@{close}}
+\index{close@{close}!PCIeMini\_Synch@{PCIeMini\_Synch}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} P\+C\+Ie\+Mini\+\_\+\+Synch\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Close the connection to a board object and free the resources. 
+
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+C\+O\+D\+E\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR if successful. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_c_ie_mini___synch_aa6fcfa1b36c185d2df53d7e329e3a25f}\label{class_p_c_ie_mini___synch_aa6fcfa1b36c185d2df53d7e329e3a25f}} 
+\index{PCIeMini\_Synch@{PCIeMini\_Synch}!getErrorMsg@{getErrorMsg}}
+\index{getErrorMsg@{getErrorMsg}!PCIeMini\_Synch@{PCIeMini\_Synch}}
+\doxysubsubsection{\texorpdfstring{getErrorMsg()}{getErrorMsg()}}
+{\footnotesize\ttfamily char $\ast$ P\+C\+Ie\+Mini\+\_\+\+Synch\+::get\+Error\+Msg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}}}]{error\+Nbr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return a text description corresponding to an error code. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to a null terminated character string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_c_ie_mini___synch_a2aac2c6b1695114ee4c74264b76295cd}\label{class_p_c_ie_mini___synch_a2aac2c6b1695114ee4c74264b76295cd}} 
+\index{PCIeMini\_Synch@{PCIeMini\_Synch}!getLedPio@{getLedPio}}
+\index{getLedPio@{getLedPio}!PCIeMini\_Synch@{PCIeMini\_Synch}}
+\doxysubsubsection{\texorpdfstring{getLedPio()}{getLedPio()}}
+{\footnotesize\ttfamily uint32\+\_\+t P\+C\+Ie\+Mini\+\_\+\+Synch\+::get\+Led\+Pio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_p_c_ie_mini___synch_acc3e4cce16189f8d077437bca6f57866}\label{class_p_c_ie_mini___synch_acc3e4cce16189f8d077437bca6f57866}} 
+\index{PCIeMini\_Synch@{PCIeMini\_Synch}!open@{open}}
+\index{open@{open}!PCIeMini\_Synch@{PCIeMini\_Synch}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} P\+C\+Ie\+Mini\+\_\+\+Synch\+::open (\begin{DoxyParamCaption}\item[{int}]{brd\+Nbr }\end{DoxyParamCaption})}
+
+
+
+Open\+: connect to an actual board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em brd\+Nbr} & The board number is actually system dependent but if you have only one board, it should be 0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+C\+O\+D\+E\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR if successful. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_c_ie_mini___synch_a8707c1d2ce57b7fd5172c362a1ae9014}\label{class_p_c_ie_mini___synch_a8707c1d2ce57b7fd5172c362a1ae9014}} 
+\index{PCIeMini\_Synch@{PCIeMini\_Synch}!reset@{reset}}
+\index{reset@{reset}!PCIeMini\_Synch@{PCIeMini\_Synch}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} P\+C\+Ie\+Mini\+\_\+\+Synch\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset the board controllers. 
+
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+C\+O\+D\+E\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR if successful. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_c_ie_mini___synch_aba5fc7d93c5e8e238d0bfafbaf815a37}\label{class_p_c_ie_mini___synch_aba5fc7d93c5e8e238d0bfafbaf815a37}} 
+\index{PCIeMini\_Synch@{PCIeMini\_Synch}!setLedPio@{setLedPio}}
+\index{setLedPio@{setLedPio}!PCIeMini\_Synch@{PCIeMini\_Synch}}
+\doxysubsubsection{\texorpdfstring{setLedPio()}{setLedPio()}}
+{\footnotesize\ttfamily void P\+C\+Ie\+Mini\+\_\+\+Synch\+::set\+Led\+Pio (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{val }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_p_c_ie_mini___synch_a229ff47322835a8b14dca049d53eea7f}\label{class_p_c_ie_mini___synch_a229ff47322835a8b14dca049d53eea7f}} 
+\index{PCIeMini\_Synch@{PCIeMini\_Synch}!controlRegister@{controlRegister}}
+\index{controlRegister@{controlRegister}!PCIeMini\_Synch@{PCIeMini\_Synch}}
+\doxysubsubsection{\texorpdfstring{controlRegister}{controlRegister}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_control_register}{Control\+Register}}$\ast$ P\+C\+Ie\+Mini\+\_\+\+Synch\+::control\+Register}
+
+
+
+Interface to the board control register. 
+
+\mbox{\Hypertarget{class_p_c_ie_mini___synch_ad61900604586a4ec234643bbd76911de}\label{class_p_c_ie_mini___synch_ad61900604586a4ec234643bbd76911de}} 
+\index{PCIeMini\_Synch@{PCIeMini\_Synch}!da@{da}}
+\index{da@{da}!PCIeMini\_Synch@{PCIeMini\_Synch}}
+\doxysubsubsection{\texorpdfstring{da}{da}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ltc2754__av}{Ltc2754\+\_\+av}}$\ast$ P\+C\+Ie\+Mini\+\_\+\+Synch\+::da}
+
+
+
+Interface to the D\+As when used as synchro simulator. 
+
+\mbox{\Hypertarget{class_p_c_ie_mini___synch_a6b60efc5e1937867a256e6490d139555}\label{class_p_c_ie_mini___synch_a6b60efc5e1937867a256e6490d139555}} 
+\index{PCIeMini\_Synch@{PCIeMini\_Synch}!ledPio@{ledPio}}
+\index{ledPio@{ledPio}!PCIeMini\_Synch@{PCIeMini\_Synch}}
+\doxysubsubsection{\texorpdfstring{ledPio}{ledPio}}
+{\footnotesize\ttfamily volatile uint32\+\_\+t$\ast$ P\+C\+Ie\+Mini\+\_\+\+Synch\+::led\+Pio}
+
+
+
+L\+ED control. 
+
+\mbox{\Hypertarget{class_p_c_ie_mini___synch_a2e7b813aaaf7ac44f6a40050f07b351c}\label{class_p_c_ie_mini___synch_a2e7b813aaaf7ac44f6a40050f07b351c}} 
+\index{PCIeMini\_Synch@{PCIeMini\_Synch}!spi\_da@{spi\_da}}
+\index{spi\_da@{spi\_da}!PCIeMini\_Synch@{PCIeMini\_Synch}}
+\doxysubsubsection{\texorpdfstring{spi\_da}{spi\_da}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ltc2754___s_p_i}{Ltc2754\+\_\+\+S\+PI}}$\ast$ P\+C\+Ie\+Mini\+\_\+\+Synch\+::spi\+\_\+da}
+
+
+
+S\+PI controller used by the D\+As as general purpose D\+As. 
+
+\mbox{\Hypertarget{class_p_c_ie_mini___synch_ab94eb2c37870fd3eaefcb5704963d75c}\label{class_p_c_ie_mini___synch_ab94eb2c37870fd3eaefcb5704963d75c}} 
+\index{PCIeMini\_Synch@{PCIeMini\_Synch}!statusRegister@{statusRegister}}
+\index{statusRegister@{statusRegister}!PCIeMini\_Synch@{PCIeMini\_Synch}}
+\doxysubsubsection{\texorpdfstring{statusRegister}{statusRegister}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_status_register}{Status\+Register}}$\ast$ P\+C\+Ie\+Mini\+\_\+\+Synch\+::status\+Register}
+
+
+
+Interface to the board status register. 
+
+\mbox{\Hypertarget{class_p_c_ie_mini___synch_a8a6f9e90649eea0eca96050c42b6a5fc}\label{class_p_c_ie_mini___synch_a8a6f9e90649eea0eca96050c42b6a5fc}} 
+\index{PCIeMini\_Synch@{PCIeMini\_Synch}!sync@{sync}}
+\index{sync@{sync}!PCIeMini\_Synch@{PCIeMini\_Synch}}
+\doxysubsubsection{\texorpdfstring{sync}{sync}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rd19231}{Rd19231}}$\ast$ P\+C\+Ie\+Mini\+\_\+\+Synch\+::sync}
+
+
+
+Interface to the R\+D19231 Synchro resolver. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Alphi/\+P\+C\+Ie\+Mini\+Software/include/\mbox{\hyperlink{_p_c_ie_mini___synch_8h}{P\+C\+Ie\+Mini\+\_\+\+Synch.\+h}}\item 
+\mbox{\hyperlink{_p_c_ie_mini___synch_8cpp}{P\+C\+Ie\+Mini\+\_\+\+Synch.\+cpp}}\end{DoxyCompactItemize}

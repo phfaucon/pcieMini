@@ -1,0 +1,88 @@
+;
+; Jungo Connectivity Confidential. Copyright (c) 2020 Jungo Connectivity Ltd. http://www.jungo.com
+;
+; Installs windrvr1440.sys as a driver for a pseudo-device
+;
+
+[Version]
+Signature=$CHICAGO$
+Class=Jungo
+ClassGuid={c671678c-82c1-43f3-d700-0049433e9a4b}
+Provider=%MFGNAME%
+; The catalog file below is digitally signed by Jungo Connectivity.
+; For WHQL, you should obtain a catalog signed by Microsoft Hardware Compatibility Labs
+CatalogFile=windrvr1440.cat
+DriverVer=07/07/2020, 14.4.0.0
+
+[Manufacturer]
+%MFGNAME%=DeviceList, NTx86, NTamd64, NTARM
+
+[DestinationDirs]
+DefaultDestDir=10,System32\Drivers
+
+[SourceDisksFiles]
+windrvr1440.sys=1
+
+[SourceDisksNames]
+1=%INSTDISK%,,,.
+; Delete the above line and uncomment the next line for WHQL
+;1 = %INSTDISK%,windrvr1440.cat,,
+
+; x86 platform, Win9x, Windows 2000 and later
+[DeviceList.NTx86]
+%DESCRIPTION%=DriverInstall,*WINDRVR1440
+
+; x64 platform, Windows XP x64 edition and later
+[DeviceList.NTamd64]
+%DESCRIPTION%=DriverInstall,*WINDRVR1440
+
+; ARM platform, Windows 10
+[DeviceList.NTARM]
+%DESCRIPTION%=DriverInstall,*WINDRVR1440
+
+[ClassInstall32]  ; Register a new class in Windows 2000 and later
+AddReg=UpdateRegistry
+
+[UpdateRegistry]
+HKR,,,,Jungo Connectivity
+HKR,,Icon,,-5
+
+;------------------------------------------------------------------------------
+;  Windows 2000 and later Sections (x86 and x64 platforms)
+;------------------------------------------------------------------------------
+
+[DriverInstall.NT]
+CopyFiles=DriverCopyFiles
+
+[DriverCopyFiles]
+windrvr1440.sys,,,0x22  ; COPYFLG_NOSKIP | COPYFLG_NO_VERSION_DIALOG
+
+[DriverInstall.NT.Services]
+AddService=WinDriver1440,2,DriverService
+
+[DriverService]
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary=%10%\system32\drivers\windrvr1440.sys
+AddReg = windrvr1440.AddReg
+
+[windrvr1440.AddReg]
+; Set the value below to 1 to enable PCI configuration space legacy read/write
+HKR, Parameters, PciCfgRwCompat, 0x00010001, 0
+
+[DriverInstall.NT.hw]
+AddReg=DriverHwAddReg
+
+[DriverHwAddReg]
+HKR,,SampleInfo,,""
+
+;------------------------------------------------------------------------------
+;  String Definitions
+;------------------------------------------------------------------------------
+
+[Strings]
+MFGNAME="Jungo Connectivity"
+INSTDISK="Jungo Connectivity Installation Disc"
+DESCRIPTION="WinDriver1440"
+

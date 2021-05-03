@@ -1,0 +1,40 @@
+\hypertarget{_alphi_board_8cpp}{}\doxysection{C\+:/\+Alphi/\+P\+C\+Ie\+Mini\+Software/\+P\+C\+Ie\+Mini\+\_\+lib/\+Alphi\+Board.cpp File Reference}
+\label{_alphi_board_8cpp}\index{C:/Alphi/PCIeMiniSoftware/PCIeMini\_lib/AlphiBoard.cpp@{C:/Alphi/PCIeMiniSoftware/PCIeMini\_lib/AlphiBoard.cpp}}
+{\ttfamily \#include \char`\"{}wdc\+\_\+lib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}wdc\+\_\+defs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Alphi\+Error\+Codes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Alphi\+Board.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}status\+\_\+strings.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}wdc\+\_\+diag\+\_\+lib.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_alphi_board_8cpp_a3fdaeff4a929898125f060b951479a85}{Q\+T\+\_\+\+C\+O\+R\+E\+\_\+\+L\+IB}}
+\item 
+\#define \mbox{\hyperlink{_alphi_board_8cpp_a53c13b0e5935985921f99e90503401a8}{M\+I\+N\+I\+P\+C\+I\+E\+\_\+\+A\+R\+I\+N\+C429\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+I\+C\+E\+N\+S\+E\+\_\+\+S\+T\+R\+I\+NG}}~((C\+H\+AR $\ast$)\char`\"{}872759db47d9ae7988a60332b89b6ea9c386010a7656b25cfdb4076053056c6f590d.\+W\+D1440\+\_\+64\+\_\+\+N\+L\+\_\+\+Alphi\+\_\+\+Technology\+\_\+\+Corporation-\/D\+IS\char`\"{})
+\item 
+\#define \mbox{\hyperlink{_alphi_board_8cpp_a543d71bf4e4e5aa2a2aea6ae653ea606}{M\+I\+N\+I\+P\+C\+I\+E\+\_\+\+A\+R\+I\+N\+C429\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+N\+A\+ME}}~W\+D\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+N\+A\+M\+E\+\_\+\+B\+A\+SE
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_alphi_board_8cpp_a543d71bf4e4e5aa2a2aea6ae653ea606}\label{_alphi_board_8cpp_a543d71bf4e4e5aa2a2aea6ae653ea606}} 
+\index{AlphiBoard.cpp@{AlphiBoard.cpp}!MINIPCIE\_ARINC429\_DEFAULT\_DRIVER\_NAME@{MINIPCIE\_ARINC429\_DEFAULT\_DRIVER\_NAME}}
+\index{MINIPCIE\_ARINC429\_DEFAULT\_DRIVER\_NAME@{MINIPCIE\_ARINC429\_DEFAULT\_DRIVER\_NAME}!AlphiBoard.cpp@{AlphiBoard.cpp}}
+\doxysubsubsection{\texorpdfstring{MINIPCIE\_ARINC429\_DEFAULT\_DRIVER\_NAME}{MINIPCIE\_ARINC429\_DEFAULT\_DRIVER\_NAME}}
+{\footnotesize\ttfamily \#define M\+I\+N\+I\+P\+C\+I\+E\+\_\+\+A\+R\+I\+N\+C429\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+N\+A\+ME~W\+D\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+N\+A\+M\+E\+\_\+\+B\+A\+SE}
+
+\mbox{\Hypertarget{_alphi_board_8cpp_a53c13b0e5935985921f99e90503401a8}\label{_alphi_board_8cpp_a53c13b0e5935985921f99e90503401a8}} 
+\index{AlphiBoard.cpp@{AlphiBoard.cpp}!MINIPCIE\_ARINC429\_DEFAULT\_LICENSE\_STRING@{MINIPCIE\_ARINC429\_DEFAULT\_LICENSE\_STRING}}
+\index{MINIPCIE\_ARINC429\_DEFAULT\_LICENSE\_STRING@{MINIPCIE\_ARINC429\_DEFAULT\_LICENSE\_STRING}!AlphiBoard.cpp@{AlphiBoard.cpp}}
+\doxysubsubsection{\texorpdfstring{MINIPCIE\_ARINC429\_DEFAULT\_LICENSE\_STRING}{MINIPCIE\_ARINC429\_DEFAULT\_LICENSE\_STRING}}
+{\footnotesize\ttfamily \#define M\+I\+N\+I\+P\+C\+I\+E\+\_\+\+A\+R\+I\+N\+C429\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+I\+C\+E\+N\+S\+E\+\_\+\+S\+T\+R\+I\+NG~((C\+H\+AR $\ast$)\char`\"{}872759db47d9ae7988a60332b89b6ea9c386010a7656b25cfdb4076053056c6f590d.\+W\+D1440\+\_\+64\+\_\+\+N\+L\+\_\+\+Alphi\+\_\+\+Technology\+\_\+\+Corporation-\/D\+IS\char`\"{})}
+
+\mbox{\Hypertarget{_alphi_board_8cpp_a3fdaeff4a929898125f060b951479a85}\label{_alphi_board_8cpp_a3fdaeff4a929898125f060b951479a85}} 
+\index{AlphiBoard.cpp@{AlphiBoard.cpp}!QT\_CORE\_LIB@{QT\_CORE\_LIB}}
+\index{QT\_CORE\_LIB@{QT\_CORE\_LIB}!AlphiBoard.cpp@{AlphiBoard.cpp}}
+\doxysubsubsection{\texorpdfstring{QT\_CORE\_LIB}{QT\_CORE\_LIB}}
+{\footnotesize\ttfamily \#define Q\+T\+\_\+\+C\+O\+R\+E\+\_\+\+L\+IB}
+

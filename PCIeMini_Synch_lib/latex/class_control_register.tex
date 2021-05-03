@@ -1,0 +1,151 @@
+\hypertarget{class_control_register}{}\doxysection{Control\+Register Class Reference}
+\label{class_control_register}\index{ControlRegister@{ControlRegister}}
+
+
+Status register class for the P\+C\+Ie\+Mini board.  
+
+
+
+
+{\ttfamily \#include $<$Mini\+Synch\+Status\+Register.\+h$>$}
+
+Inheritance diagram for Control\+Register\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_control_register}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_control_register_af9bb3f420ef5380af730a64f7f4ab414}{Resolution}} \{ \mbox{\hyperlink{class_control_register_af9bb3f420ef5380af730a64f7f4ab414a7b1a429bf15738ae9c8b6d2b44bd7ae6}{R\+E\+S\+\_\+10\+\_\+\+B\+IT}} = 0, 
+\mbox{\hyperlink{class_control_register_af9bb3f420ef5380af730a64f7f4ab414a7f1018a570d63efafa69ce278456e8c4}{R\+E\+S\+\_\+12\+\_\+\+B\+IT}} = 1, 
+\mbox{\hyperlink{class_control_register_af9bb3f420ef5380af730a64f7f4ab414a1d35534b008adedf3fbb84d3d1185e79}{R\+E\+S\+\_\+14\+\_\+\+B\+IT}} = 2, 
+\mbox{\hyperlink{class_control_register_af9bb3f420ef5380af730a64f7f4ab414a54a724f1396d92bf5c8fea2f783ae913}{R\+E\+S\+\_\+16\+\_\+\+B\+IT}} = 3
+ \}
+\item 
+enum \mbox{\hyperlink{class_control_register_ae81d8545e7ec1dab4478096eaf1501c0}{Shift\+Control}} \{ \mbox{\hyperlink{class_control_register_ae81d8545e7ec1dab4478096eaf1501c0a37d05bd6fad5bd479b8659687b211ac5}{V\+E\+L1}} = 4, 
+\mbox{\hyperlink{class_control_register_ae81d8545e7ec1dab4478096eaf1501c0a919599001db80a48d2d321aede6a42a1}{V\+E\+L2}} = 0
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_control_register_a0400396d3fa2c1d500782456d18c3744}{Control\+Register}} (volatile void $\ast$addr)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} \mbox{\hyperlink{class_control_register_a77cda7dd028d8fd462ae6135f4ca9481}{enable\+Spi\+Da}} (bool enabled)
+\begin{DoxyCompactList}\small\item\em Select the type of output of the D/A. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{class_control_register_af1e6ce4638a9b83c91517a725050528a}{gp\+Out\+\_\+\+Da\+Mode\+\_\+mask}} = 0x400
+\item 
+static const int \mbox{\hyperlink{class_control_register_aa1f8c9d873e7a9ac5ba63641d5e0a6f8}{gp\+Out\+\_\+\+Ldac\+\_\+mask}} = 0x800
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Status register class for the P\+C\+Ie\+Mini board. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_control_register_af9bb3f420ef5380af730a64f7f4ab414}\label{class_control_register_af9bb3f420ef5380af730a64f7f4ab414}} 
+\index{ControlRegister@{ControlRegister}!Resolution@{Resolution}}
+\index{Resolution@{Resolution}!ControlRegister@{ControlRegister}}
+\doxysubsubsection{\texorpdfstring{Resolution}{Resolution}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_control_register_af9bb3f420ef5380af730a64f7f4ab414}{Control\+Register\+::\+Resolution}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RES\_10\_BIT@{RES\_10\_BIT}!ControlRegister@{ControlRegister}}\index{ControlRegister@{ControlRegister}!RES\_10\_BIT@{RES\_10\_BIT}}}\mbox{\Hypertarget{class_control_register_af9bb3f420ef5380af730a64f7f4ab414a7b1a429bf15738ae9c8b6d2b44bd7ae6}\label{class_control_register_af9bb3f420ef5380af730a64f7f4ab414a7b1a429bf15738ae9c8b6d2b44bd7ae6}} 
+R\+E\+S\+\_\+10\+\_\+\+B\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RES\_12\_BIT@{RES\_12\_BIT}!ControlRegister@{ControlRegister}}\index{ControlRegister@{ControlRegister}!RES\_12\_BIT@{RES\_12\_BIT}}}\mbox{\Hypertarget{class_control_register_af9bb3f420ef5380af730a64f7f4ab414a7f1018a570d63efafa69ce278456e8c4}\label{class_control_register_af9bb3f420ef5380af730a64f7f4ab414a7f1018a570d63efafa69ce278456e8c4}} 
+R\+E\+S\+\_\+12\+\_\+\+B\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RES\_14\_BIT@{RES\_14\_BIT}!ControlRegister@{ControlRegister}}\index{ControlRegister@{ControlRegister}!RES\_14\_BIT@{RES\_14\_BIT}}}\mbox{\Hypertarget{class_control_register_af9bb3f420ef5380af730a64f7f4ab414a1d35534b008adedf3fbb84d3d1185e79}\label{class_control_register_af9bb3f420ef5380af730a64f7f4ab414a1d35534b008adedf3fbb84d3d1185e79}} 
+R\+E\+S\+\_\+14\+\_\+\+B\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RES\_16\_BIT@{RES\_16\_BIT}!ControlRegister@{ControlRegister}}\index{ControlRegister@{ControlRegister}!RES\_16\_BIT@{RES\_16\_BIT}}}\mbox{\Hypertarget{class_control_register_af9bb3f420ef5380af730a64f7f4ab414a54a724f1396d92bf5c8fea2f783ae913}\label{class_control_register_af9bb3f420ef5380af730a64f7f4ab414a54a724f1396d92bf5c8fea2f783ae913}} 
+R\+E\+S\+\_\+16\+\_\+\+B\+IT&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_control_register_ae81d8545e7ec1dab4478096eaf1501c0}\label{class_control_register_ae81d8545e7ec1dab4478096eaf1501c0}} 
+\index{ControlRegister@{ControlRegister}!ShiftControl@{ShiftControl}}
+\index{ShiftControl@{ShiftControl}!ControlRegister@{ControlRegister}}
+\doxysubsubsection{\texorpdfstring{ShiftControl}{ShiftControl}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_control_register_ae81d8545e7ec1dab4478096eaf1501c0}{Control\+Register\+::\+Shift\+Control}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VEL1@{VEL1}!ControlRegister@{ControlRegister}}\index{ControlRegister@{ControlRegister}!VEL1@{VEL1}}}\mbox{\Hypertarget{class_control_register_ae81d8545e7ec1dab4478096eaf1501c0a37d05bd6fad5bd479b8659687b211ac5}\label{class_control_register_ae81d8545e7ec1dab4478096eaf1501c0a37d05bd6fad5bd479b8659687b211ac5}} 
+V\+E\+L1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VEL2@{VEL2}!ControlRegister@{ControlRegister}}\index{ControlRegister@{ControlRegister}!VEL2@{VEL2}}}\mbox{\Hypertarget{class_control_register_ae81d8545e7ec1dab4478096eaf1501c0a919599001db80a48d2d321aede6a42a1}\label{class_control_register_ae81d8545e7ec1dab4478096eaf1501c0a919599001db80a48d2d321aede6a42a1}} 
+V\+E\+L2&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_control_register_a0400396d3fa2c1d500782456d18c3744}\label{class_control_register_a0400396d3fa2c1d500782456d18c3744}} 
+\index{ControlRegister@{ControlRegister}!ControlRegister@{ControlRegister}}
+\index{ControlRegister@{ControlRegister}!ControlRegister@{ControlRegister}}
+\doxysubsubsection{\texorpdfstring{ControlRegister()}{ControlRegister()}}
+{\footnotesize\ttfamily Control\+Register\+::\+Control\+Register (\begin{DoxyParamCaption}\item[{volatile void $\ast$}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+Only called when the board is opened. 
+\begin{DoxyParams}{Parameters}
+{\em addr} & Pointer to the device in user\textquotesingle{}s space. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_control_register_a77cda7dd028d8fd462ae6135f4ca9481}\label{class_control_register_a77cda7dd028d8fd462ae6135f4ca9481}} 
+\index{ControlRegister@{ControlRegister}!enableSpiDa@{enableSpiDa}}
+\index{enableSpiDa@{enableSpiDa}!ControlRegister@{ControlRegister}}
+\doxysubsubsection{\texorpdfstring{enableSpiDa()}{enableSpiDa()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_alphi_error_codes_8h_a4b142a4c78e96bfd701721b08ab3dfd3}{P\+C\+Ie\+Mini\+\_\+status}} Control\+Register\+::enable\+Spi\+Da (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Select the type of output of the D/A. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & True when the D/\+As are general purpose, False when they are a synchro simulator \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em E\+R\+R\+C\+O\+D\+E\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR} & \\
+\hline
+\end{DoxyRetVals}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_control_register_af1e6ce4638a9b83c91517a725050528a}\label{class_control_register_af1e6ce4638a9b83c91517a725050528a}} 
+\index{ControlRegister@{ControlRegister}!gpOut\_DaMode\_mask@{gpOut\_DaMode\_mask}}
+\index{gpOut\_DaMode\_mask@{gpOut\_DaMode\_mask}!ControlRegister@{ControlRegister}}
+\doxysubsubsection{\texorpdfstring{gpOut\_DaMode\_mask}{gpOut\_DaMode\_mask}}
+{\footnotesize\ttfamily const int Control\+Register\+::gp\+Out\+\_\+\+Da\+Mode\+\_\+mask = 0x400\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_control_register_aa1f8c9d873e7a9ac5ba63641d5e0a6f8}\label{class_control_register_aa1f8c9d873e7a9ac5ba63641d5e0a6f8}} 
+\index{ControlRegister@{ControlRegister}!gpOut\_Ldac\_mask@{gpOut\_Ldac\_mask}}
+\index{gpOut\_Ldac\_mask@{gpOut\_Ldac\_mask}!ControlRegister@{ControlRegister}}
+\doxysubsubsection{\texorpdfstring{gpOut\_Ldac\_mask}{gpOut\_Ldac\_mask}}
+{\footnotesize\ttfamily const int Control\+Register\+::gp\+Out\+\_\+\+Ldac\+\_\+mask = 0x800\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Alphi/\+P\+C\+Ie\+Mini\+Software/include/\mbox{\hyperlink{_mini_synch_status_register_8h}{Mini\+Synch\+Status\+Register.\+h}}\end{DoxyCompactItemize}

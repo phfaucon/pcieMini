@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['selectslave_186',['selectSlave',['../class_altera_spi.html#ad85a1a7e29eaf5ea851f1dd2335db61d',1,'AlteraSpi']]],
+  ['sendspicommand_187',['sendSpiCommand',['../class_altera_spi.html#a1d6da8f8a46a6a72e2c2b9bd4d64625b',1,'AlteraSpi']]],
+  ['setangle_188',['setAngle',['../class_ltc2754__av.html#a02ac28eff3c1942d562d5e114526c2b7',1,'Ltc2754_av']]],
+  ['setangularvelocity_189',['setAngularVelocity',['../class_ltc2754__av.html#a4e1e6a5d66af68dc4e9ace26925790d0',1,'Ltc2754_av']]],
+  ['setcode_190',['setCode',['../class_ltc2754___s_p_i.html#a3427fe65e9d4f0c5bbedf12758e08ca6',1,'Ltc2754_SPI']]],
+  ['setcontrol_191',['setControl',['../class_altera_spi.html#ac38fdac11b408b3045567709b7a7cb7f',1,'AlteraSpi']]],
+  ['setdata_192',['setData',['../class_altera_pio.html#abdb1366d85f2b6e5b07301cd2ac0939f',1,'AlteraPio']]],
+  ['setfrequency_193',['setFrequency',['../class_ltc2754__av.html#aea73beac0dbe6b6b867c6f7c216dda4d',1,'Ltc2754_av']]],
+  ['setirqenablemask_194',['setIrqEnableMask',['../class_pcie_cra.html#a1e3aac8849a818c5a739fd31eb137784',1,'PcieCra']]],
+  ['setirqmask_195',['setIrqMask',['../class_altera_pio.html#ad8917ca2092a7950adb583d16cb08840',1,'AlteraPio']]],
+  ['setledpio_196',['setLedPio',['../class_p_c_ie_mini___synch.html#aba5fc7d93c5e8e238d0bfafbaf815a37',1,'PCIeMini_Synch']]],
+  ['setsimgain_197',['setSimGain',['../class_ltc2754__av.html#a013fc53e92e14e11431b7893fc732bdd',1,'Ltc2754_av']]],
+  ['settxdata_198',['setTxData',['../class_altera_spi.html#a8ed70b36c10b352c031575557503bb14',1,'AlteraSpi']]],
+  ['setverbose_199',['setVerbose',['../class_alphi_board.html#a9d11e101513eb8e29dc3ea528b5eb1bd',1,'AlphiBoard']]],
+  ['shiftcontrol_200',['ShiftControl',['../class_control_register.html#ae81d8545e7ec1dab4478096eaf1501c0',1,'ControlRegister']]],
+  ['spi_5fda_201',['spi_da',['../class_p_c_ie_mini___synch.html#a2e7b813aaaf7ac44f6a40050f07b351c',1,'PCIeMini_Synch']]],
+  ['status_5fbit_5fvalid_5fmask_202',['STATUS_BIT_VALID_MASK',['../class_status_register.html#adcaf051687ae5651c330c2ba77b0f0a6',1,'StatusRegister']]],
+  ['status_5froe_5fmask_203',['status_ROE_mask',['../class_altera_spi.html#ac215eed3f4b0b70e6c9d96210ab04e31',1,'AlteraSpi']]],
+  ['status_5frrdy_5fmask_204',['status_RRDY_mask',['../class_altera_spi.html#a7e3529926753aab9fb475ea510371c57',1,'AlteraSpi']]],
+  ['status_5ftmt_5fmask_205',['status_TMT_mask',['../class_altera_spi.html#a6159b8c27c5504614b3548f4d6d91c70',1,'AlteraSpi']]],
+  ['status_5ftoe_5fmask_206',['status_TOE_mask',['../class_altera_spi.html#aa60e46a613144683bcd681f97224c1c4',1,'AlteraSpi']]],
+  ['status_5ftrdy_5fmask_207',['status_TRDY_mask',['../class_altera_spi.html#a1caa1a87cfb61e65989c186ba2677241',1,'AlteraSpi']]],
+  ['statusregister_208',['StatusRegister',['../class_status_register.html',1,'StatusRegister'],['../class_p_c_ie_mini___synch.html#ab94eb2c37870fd3eaefcb5704963d75c',1,'PCIeMini_Synch::statusRegister()'],['../class_status_register.html#abb2e0eb74f5018386b47f778ce443fae',1,'StatusRegister::StatusRegister()']]],
+  ['sync_209',['sync',['../class_p_c_ie_mini___synch.html#a8a6f9e90649eea0eca96050c42b6a5fc',1,'PCIeMini_Synch']]],
+  ['sysid_210',['sysid',['../class_alphi_board.html#aad6bf4e0b1601a1315a6ad72e95fa276',1,'AlphiBoard']]]
+];
